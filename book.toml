@@ -15,4 +15,4 @@ create-missing = true
 [output.html]
 default-theme = "light"
 git-repository-url = "https://github.com/supbg1/TMSCN"
-edit-url-template = "https://github.com/supbg1/TMSCN/edit/master/{path}"
+edit-url-template = "https://github.com/supbg1/TMSCN/edit/main/{path}"
