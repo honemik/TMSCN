@@ -5,7 +5,7 @@ src= "src"
 language = "zh-Hant-TW"
 
 [build]
-build-dir = "build"
+build-dir = "book"
 create-missing = true
 
 [preprocessor.index]
