@@ -1,0 +1,18 @@
+[book]
+title = "TMSCN"
+description = "The example book covers examples."
+src= "src"
+language = "zh-Hant-TW"
+
+[build]
+build-dir = "build"
+create-missing = true
+
+[preprocessor.index]
+
+[preprocessor.links]
+
+[output.html]
+default-theme = "light"
+git-repository-url = "https://github.com/supbg1/TMSCN"
+edit-url-template = "https://github.com/supbg1/TMSCN/edit/master/guide/{path}"
