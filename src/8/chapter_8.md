@@ -1,6 +1,6 @@
 # 寄生蟲學
 
-寄蟲主要可分為蠕蟲 ( Helminth ), 原蟲 ( protozoae ), 節肢動物 ( arthropoda )，其中蠕蟲又可分為線蟲 ( nematode ), 吸蟲 ( trematodes ), 絛蟲 ( cestode )，所以這篇會依以下方式分門別類介紹
+寄蟲主要可分為蠕蟲 ( Helminth )，原蟲 ( protozoae )，節肢動物 ( arthropoda )，其中蠕蟲又可分為線蟲 ( nematode )，吸蟲 ( trematodes ), 絛蟲 ( cestode )，所以這篇會依以下方式分門別類介紹
 
 1. [總論](./8-1.md)
 2. [線蟲(nematode)](./8-2.md)
