@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hant-TW" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>總論 - TMSCN</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="The example book covers examples.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../cover.html"><strong aria-hidden="true">1.</strong> 封面</a></li><li class="chapter-item "><a href="../intro.html"><strong aria-hidden="true">2.</strong> 前言</a></li><li class="chapter-item "><a href="../1/chapter_1.html"><strong aria-hidden="true">3.</strong> 解剖學</a></li><li class="chapter-item "><a href="../2/chapter_2.html"><strong aria-hidden="true">4.</strong> 胚胎及發育生物學</a></li><li class="chapter-item "><a href="../3/chapter_3.html"><strong aria-hidden="true">5.</strong> 組織學</a></li><li class="chapter-item "><a href="../4/chapter_4.html"><strong aria-hidden="true">6.</strong> 生理學</a></li><li class="chapter-item "><a href="../5/chapter_5.html"><strong aria-hidden="true">7.</strong> 生物化學</a></li><li class="chapter-item expanded "><a href="../6/chapter_6.html"><strong aria-hidden="true">8.</strong> 微生物</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../6/6-1.html" class="active"><strong aria-hidden="true">8.1.</strong> 總論</a></li><li class="chapter-item "><a href="../6/6-2.html"><strong aria-hidden="true">8.2.</strong> 細菌</a></li><li class="chapter-item "><a href="../6/6-3.html"><strong aria-hidden="true">8.3.</strong> 病毒</a></li><li class="chapter-item "><a href="../6/6-4.html"><strong aria-hidden="true">8.4.</strong> 真菌</a></li></ol></li><li class="chapter-item "><a href="../7/chapter_7.html"><strong aria-hidden="true">9.</strong> 免疫學</a></li><li class="chapter-item "><a href="../8/chapter_8.html"><strong aria-hidden="true">10.</strong> 寄生蟲學</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../8/8-1.html"><strong aria-hidden="true">10.1.</strong> 總論</a></li><li class="chapter-item "><a href="../8/8-2.html"><strong aria-hidden="true">10.2.</strong> 線蟲(nematode)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../8/8-2-1.html"><strong aria-hidden="true">10.2.1.</strong> 線蟲1</a></li><li class="chapter-item "><a href="../8/8-2-2.html"><strong aria-hidden="true">10.2.2.</strong> 線蟲2</a></li></ol></li><li class="chapter-item "><a href="../8/8-3.html"><strong aria-hidden="true">10.3.</strong> 吸蟲(trematode)</a></li><li class="chapter-item "><a href="../8/8-4.html"><strong aria-hidden="true">10.4.</strong> 絛蟲(cestode)</a></li><li class="chapter-item "><a href="../8/8-5.html"><strong aria-hidden="true">10.5.</strong> 原蟲(protozoae)</a></li><li class="chapter-item "><a href="../8/8-6.html"><strong aria-hidden="true">10.6.</strong> 節肢動物(arthropad)</a></li></ol></li><li class="chapter-item "><a href="../9/chapter_9.html"><strong aria-hidden="true">11.</strong> 公共衛生學</a></li><li class="chapter-item "><a href="../10/chapter_10.html"><strong aria-hidden="true">12.</strong> 藥理學</a></li><li class="chapter-item "><a href="../11/chapter_11.html"><strong aria-hidden="true">13.</strong> 病理學</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">TMSCN</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/supbg1/TMSCN" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/supbg1/TMSCN/edit/main/src/6/6-1.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                        
+
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="總論"><a class="header" href="#總論">總論</a></h1>
+<h1 id="微生物的發現與理論"><a class="header" href="#微生物的發現與理論">微生物的發現與理論</a></h1>
+<h2 id="雷文霍克-antony-van-leeuwenhoek-16321723"><a class="header" href="#雷文霍克-antony-van-leeuwenhoek-16321723">雷文霍克 Antony van Leeuwenhoek 1632~1723</a></h2>
+<p>第一位精準觀察並描述微生物的人，當時他將這些生物稱為 Animalcules</p>
+<h2 id="巴斯德-louis-pasteur-18221895"><a class="header" href="#巴斯德-louis-pasteur-18221895">巴斯德 Louis Pasteur 1822~1895</a></h2>
+<p>微生物學之父：疾病生源說 ( Germ Theory of Disease )</p>
+<p>巴斯德殺菌法 Pasteurization</p>
+<ul>
+<li>用 60~90 °C 的短暫高溫處理，能殺死食物中大部分的微生物，延長保存期限</li>
+<li>不影響食物原先的風味，用於鮮奶、酒類、果汁</li>
+</ul>
+<p>鵝頸瓶實驗</p>
+<ul>
+<li>將肉湯裝入鵝頸瓶中並將其煮沸殺死微生物</li>
+<li>S 形瓶頸的彎曲處能阻擋帶有微生物的灰塵，只要不切斷瓶頸，肉汁就不會腐敗</li>
+<li>推翻無生源論 ( Abiogenesis )，確立「生命必源自生命」的想法</li>
+</ul>
+<h2 id="柯霍假說"><a class="header" href="#柯霍假說">柯霍假說</a></h2>
+<p>柯霍與他的老師亨勒 ( Jacob Henle ) 共同提出</p>
+<ul>
+<li>起初用遇說明炭疽桿菌 ( <em>Bacillus anthracis</em> )與炭疽病 ( Anthrax ) 之間的關係</li>
+<li>後來衍生出微生物致病的理論，人們也開始思考如何以清除病原體 ( Pathogens ) 來解決疾病</li>
+</ul>
+<p>假說內容</p>
+<ol>
+<li>此種病原體必定存在於所有患病個體內，但不存在於健康個體 </li>
+<li>可以從患病個體中分離出此種病原體，並在培養基中獨立培養</li>
+<li>將培養出的病原體植入健康個體後，可以造成相同的疾病症狀</li>
+<li>能從被植入病原體的個體體內，以相同方式再次分離出相同的病原體</li>
+</ol>
+<p>假說缺陷</p>
+<ul>
+<li>有些帶原者並不會出現症狀，所以柯霍將第一條的後半刪除</li>
+<li>霍亂、結核病等疾病，未必能在不同個體上表現相同病症，並不符合第三條原則</li>
+</ul>
+<p>影響</p>
+<ul>
+<li>科學家得以發現大多數重大傳染病之致病因子 ( Causative Agent )</li>
+<li>促成許多疾病的預防和治療。如下圖：1900 年對比現代，傳染病致死比率大幅下降</li>
+</ul>
+<p>//圖</p>
+<h2 id="微生物防治"><a class="header" href="#微生物防治">微生物防治</a></h2>
+<p>化學治療的演進</p>
+<table><thead><tr><th>姓名</th><th>年代</th><th>貢獻</th></tr></thead><tbody>
+<tr><td>Paul Ehrlich</td><td>1910</td><td>製造出化學抗菌劑 Salvarsan 606，有效治療梅毒 ( Syphilis )</td></tr>
+<tr><td>Alexander Fleming</td><td>1928</td><td>發現並提煉出第一種抗生素盤尼西林 ( Penicillin )</td></tr>
+<tr><td>Gerhard Domagk</td><td>1935</td><td>發現磺胺類藥物 ( Sulfanilamide )，是第一種人工合成抗菌藥物</td></tr>
+<tr><td>Selman Waksman</td><td>1943</td><td>分離出鍊黴素 ( Streptomycin )，成功地治療肺結核 ( TB, Tuberculosis )</td></tr>
+<tr><td>John Franklin Enders</td><td>1946</td><td>現代疫苗之父，培養小兒麻痺病毒 ( Poliomyelitus Viruses ) 促成疫苗研發</td></tr>
+</tbody></table>
+<p>抗生素抗藥性 ( Antimicrobial Resistance )</p>
+<ul>
+<li>抗藥性：可見於細菌、真菌、病毒和寄生蟲，最常見於大腸桿菌
+<ul>
+<li>近年來發現並濫用各種抗生素，加上廣泛應用在畜牧及醫療業，造成抗藥性問題</li>
+<li>交通愈發便利，細菌透過質體交換，大幅增加族群中帶抗藥性的細菌，加劇了抗藥性問題</li>
+<li>目前已發現全抗性抗藥性的超級細菌 ( Superbug )，即臨床的抗生素皆無效，英國在 2012 年提出如不重視此問題，2050 年後死於傳染性疾病的人將多於癌症 ( 回歸沒有抗生素的年代 )</li>
+</ul>
+</li>
+<li>解決方案
+<ul>
+<li>在自然環境培植微生物提取新型抗生素</li>
+<li>尋找新療法，例如噬菌體</li>
+<li>研發疫苗</li>
+</ul>
+</li>
+</ul>
+<p>微生物的重要性</p>
+<ul>
+<li>人體內及表面的微生物相 ( Microbiota )
+<ul>
+<li>人體內及表面的微生物數量是人體總細胞的三倍、基因量則是超過人體基因數 100 倍</li>
+<li>可對抗病原體入侵、在腸道協助合成維生素B、K</li>
+<li>不同個體與不同身體部位的微生物組成差異相當大</li>
+<li>人體微生物群系計畫 ( HMP, The Human Microbiome Project )：人體基因定序完成後，開始研究健康個體內微生物群系 ( Microbiome ) 的基因組成</li>
+</ul>
+</li>
+<li>現代生物科技及重組 DNA 技術：多為利用微生物特有的酵素進行，如體外核酸剪接</li>
+<li>回收重要元素 ( 如C、N、P、S )：如在土壤中的微生物</li>
+<li>生物降解 ( Bioremediation )：如汙水處理、使用微生物移除石油油污</li>
+<li>病蟲害的防治：如利用微生物減低農作物蟲害</li>
+</ul>
+<h2 id="微生物相與微生物群系"><a class="header" href="#微生物相與微生物群系">微生物相與微生物群系</a></h2>
+<p>微生物群系 ( Microbiome ) 指的是存在某個環境中的微生物相 ( Microbiota ) 的基因體</p>
+<p>微生物群系 ( Microbiome ) 的分類</p>
+<ul>
+<li>核心微生物群系 ( Core Microbiome )：不同個體的同一部位共有的微生物種類 ( 超過95% )
+<ul>
+<li>共有種類數量：嘴 &gt;鼻 &gt; 腸胃 &gt; 皮膚 &gt; 陰道</li>
+<li>對代謝及免疫非常重要</li>
+</ul>
+</li>
+<li>次級微生物群系 ( Secondary Microbiome )：不會廣泛共有於不同個體的微生物種類
+<ul>
+<li>協助各種器官的功能執行</li>
+<li>組成種類不盡相同 ( Taxonomic Diversity )，但整體的功能很類似 ( Functional Redundancy )</li>
+</ul>
+</li>
+</ul>
+<p>微生物相 ( Microbiota ) 的演化</p>
+<ul>
+<li>下圖左半：共生微生物鋪滿腸道，形成健康的微生物相 ( Healthy Microbiota )
+<ul>
+<li>第 1 層防禦：微生物耗盡營養物質，讓外來病菌缺乏營養，沒有空間生存 ( 競爭關係 )</li>
+<li>第 2 層防禦：刺激腸道細胞分裂或刺激自身免疫系統</li>
+</ul>
+</li>
+<li>下圖右半：共生微生物缺乏或不平衡 ( Depleted Microbiota )，上述功能消失，病原體得以入侵</li>
+<li>微生物相會受飲食和生理狀態影響</li>
+</ul>
+<p>//補圖</p>
+<p>生物群系在疾病中扮演的角色</p>
+<ul>
+<li>柯霍氏假說 ( Koch Postulates ) 中提出，一種有機體微生物會造成一種疾病</li>
+<li>現代觀點則較傾向認為，菌落 ( Community of Organisms ) 的失衡 ( Dysbiosis ) 會造成疾病</li>
+</ul>
+<p>//補圖</p>
+<p>相關疾病的診斷以及治療方法</p>
+<ul>
+<li>困難梭狀芽孢桿菌腸炎 ( Difficile Colitis )，約20～60％的患者在接受了抗生素治療之後會復發</li>
+<li>替代方法：糞便菌落群移植 ( Fecal Microbial Transplantation )，俗稱的吃大便療法，透過移植正常人的腸道菌叢生態，讓患者的腸道菌像恢復平衡</li>
+<li>在其他疾病上可能有意外的療效，如腸道疾病、癌症、肥胖和情緒都與腸道的微生物組成有關</li>
+</ul>
+<p>益生菌 ( Probiotics )</p>
+<ul>
+<li>常見的益生菌有：比菲德氏菌 ( Bifidobacterium )、乳酸桿菌 ( lactobacillus )、酵母菌 ( Yeast )</li>
+<li>對於療效目前仍然存在爭議，不過仍有不少證明其有效的科學證據</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../6/chapter_6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../6/6-2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../6/chapter_6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../6/6-2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

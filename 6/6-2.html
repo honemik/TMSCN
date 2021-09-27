@@ -1,0 +1,773 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hant-TW" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>細菌 - TMSCN</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="The example book covers examples.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../cover.html"><strong aria-hidden="true">1.</strong> 封面</a></li><li class="chapter-item "><a href="../intro.html"><strong aria-hidden="true">2.</strong> 前言</a></li><li class="chapter-item "><a href="../1/chapter_1.html"><strong aria-hidden="true">3.</strong> 解剖學</a></li><li class="chapter-item "><a href="../2/chapter_2.html"><strong aria-hidden="true">4.</strong> 胚胎及發育生物學</a></li><li class="chapter-item "><a href="../3/chapter_3.html"><strong aria-hidden="true">5.</strong> 組織學</a></li><li class="chapter-item "><a href="../4/chapter_4.html"><strong aria-hidden="true">6.</strong> 生理學</a></li><li class="chapter-item "><a href="../5/chapter_5.html"><strong aria-hidden="true">7.</strong> 生物化學</a></li><li class="chapter-item expanded "><a href="../6/chapter_6.html"><strong aria-hidden="true">8.</strong> 微生物</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6/6-1.html"><strong aria-hidden="true">8.1.</strong> 總論</a></li><li class="chapter-item expanded "><a href="../6/6-2.html" class="active"><strong aria-hidden="true">8.2.</strong> 細菌</a></li><li class="chapter-item "><a href="../6/6-3.html"><strong aria-hidden="true">8.3.</strong> 病毒</a></li><li class="chapter-item "><a href="../6/6-4.html"><strong aria-hidden="true">8.4.</strong> 真菌</a></li></ol></li><li class="chapter-item "><a href="../7/chapter_7.html"><strong aria-hidden="true">9.</strong> 免疫學</a></li><li class="chapter-item "><a href="../8/chapter_8.html"><strong aria-hidden="true">10.</strong> 寄生蟲學</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../8/8-1.html"><strong aria-hidden="true">10.1.</strong> 總論</a></li><li class="chapter-item "><a href="../8/8-2.html"><strong aria-hidden="true">10.2.</strong> 線蟲(nematode)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../8/8-2-1.html"><strong aria-hidden="true">10.2.1.</strong> 線蟲1</a></li><li class="chapter-item "><a href="../8/8-2-2.html"><strong aria-hidden="true">10.2.2.</strong> 線蟲2</a></li></ol></li><li class="chapter-item "><a href="../8/8-3.html"><strong aria-hidden="true">10.3.</strong> 吸蟲(trematode)</a></li><li class="chapter-item "><a href="../8/8-4.html"><strong aria-hidden="true">10.4.</strong> 絛蟲(cestode)</a></li><li class="chapter-item "><a href="../8/8-5.html"><strong aria-hidden="true">10.5.</strong> 原蟲(protozoae)</a></li><li class="chapter-item "><a href="../8/8-6.html"><strong aria-hidden="true">10.6.</strong> 節肢動物(arthropad)</a></li></ol></li><li class="chapter-item "><a href="../9/chapter_9.html"><strong aria-hidden="true">11.</strong> 公共衛生學</a></li><li class="chapter-item "><a href="../10/chapter_10.html"><strong aria-hidden="true">12.</strong> 藥理學</a></li><li class="chapter-item "><a href="../11/chapter_11.html"><strong aria-hidden="true">13.</strong> 病理學</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">TMSCN</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/supbg1/TMSCN" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/supbg1/TMSCN/edit/main/src/6/6-2.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                        
+
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="細菌"><a class="header" href="#細菌">細菌</a></h1>
+<h2 id="分類"><a class="header" href="#分類">分類</a></h2>
+<p>三域分類法：真細菌 ( Bacteria )、古細菌 ( Archaea )、真核細菌 ( Eucarya )</p>
+<p>微生物 ( Microbes / Microorganism ) 大小比較</p>
+<ul>
+<li>藻類 &gt; 原生生物 &gt; 真菌 . 細菌 &gt; 病毒</li>
+<li>細菌大小大多以微米表示，人類視覺極限約 0.2mm
+<ul>
+<li>較大細菌 ( 0.1～0.3 mm )：納米比亞氏嗜硫珠菌 ( Thiomargarita )</li>
+<li>較小細菌 ( 0.1～0.2 μm )：砂眼衣原體 ( Chlamydia )、立克次體 ( Rickettsia )，接近病毒大小</li>
+</ul>
+</li>
+</ul>
+<p>巨觀 ( Macroscopic Appearance )：依培養基上觀察到的特徵分類</p>
+<ul>
+<li>依菌落顏色、大小、形狀、味道</li>
+<li>不同微生物在不同養分或生長介質中，表現出不同生長特徵</li>
+</ul>
+<p>微觀 ( Microscopic Appearance )：依顯微鏡下觀察到的特徵分類</p>
+<ol>
+<li>依細菌形狀、大小、細菌個體間的排列做區分
+<ul>
+<li>形狀
+<ul>
+<li>球菌(Coccus)</li>
+<li>桿菌(Bacillus)</li>
+<li>球桿菌(Coccobacillus)</li>
+<li>梭菌(Fusiform bacillus)</li>
+<li>弧菌(Vibrio)</li>
+<li>疏螺旋菌(Spirillum)</li>
+<li>密螺旋菌(Spirochete)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>格蘭氏染色(Gram Staining )
+<ul>
+<li>分類：兩者有生理差異，在決定細菌感染的治療方式及藥物選擇上有相當大的助益
+<ul>
+<li>革蘭氏陽性菌 ( +：Gram-positive )：細胞壁較厚，染色後呈紫色</li>
+<li>格蘭氏陰性菌 ( -：Gram-negative )：細胞壁較薄，染色後呈粉紅色</li>
+<li>陰性菌細胞壁較薄，又比陽性菌多了一層外膜 ( Outer Membrane )，Crystal Violet 會被乙醇 ( Alcohol )或丙酮 ( Acetone )脫色，使用Safranin Red 後呈粉紅色</li>
+</ul>
+</li>
+<li>格蘭氏染色法過程
+<ul>
+<li>詳細步驟</li>
+<li>將細菌固定於玻片上</li>
+<li>初染劑：用 Crystal Violet 染第一次</li>
+<li>媒染劑：用 Gram Iodine，和初染劑反應，增加染劑的附著力，幫助染劑固定於細胞上</li>
+<li>脫色劑：用乙醇或丙酮洗去多餘染劑，並溶解細胞中的脂質</li>
+<li>附染劑：用 Safranin，將被脫色的細菌 ( G- )染成紅色，以便觀察</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>依細菌特性分類
+<ul>
+<li>生物型 ( Biotype )：依照新陳代謝特性
+<ul>
+<li>氧氣或特定營養物的需求</li>
+<li>碳水化合物或氮的利用方式</li>
+<li>產生特定代謝物和酵素</li>
+</ul>
+</li>
+<li>蛋白質圖譜
+<ul>
+<li>藉由質譜得到的訊號與資料庫比對</li>
+</ul>
+</li>
+<li>血清型 (　Serotyping　)：依照抗原性 ( Antigenicity )，即打到其他動物體內可否產生抗體
+<ul>
+<li>區別同種細菌的不同品種</li>
+<li>鑑定難以培養的或危險的細菌</li>
+</ul>
+</li>
+<li>基因型 ( Genotype )：可快速鑑定成長緩慢的細菌
+<ul>
+<li>利用DNA 雜交 ( 設計與某段序列互補的序列作為探針 ) 與 PCR 放大後進行檢測</li>
+<li>分析 rRNA ( 16S Ribosomal RNA Sequence )，此序列細菌大多都有且每種排序不同，辨識度高</li>
+<li>分析染色體上 DNA 片段</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="結構"><a class="header" href="#結構">結構</a></h2>
+<p>原核生物</p>
+<ul>
+<li>大小多介於 0.5～3 μm，不具細胞核及膜狀胞器，DNA 裸露在細胞質中</li>
+<li>染色體多為單套 ( Haploid )、雙股、環狀DNA，可能還有環狀質體DNA ( Plasmid DNA )</li>
+<li>基因體大小：0.5～13 Mb ( Million Base Pairs )</li>
+<li>核糖體為 70S ( 50S+30S )，S 為沉降係數，等效數值不等於相加</li>
+<li>行無性生殖，但可藉由水平轉移傳遞遺傳訊息</li>
+</ul>
+<p>真核生物</p>
+<ul>
+<li>大小約 10～100 μm，具膜狀胞器，DNA 包覆在核膜中</li>
+<li>染色體多對雙套 ( Diploid )，只有酵母菌有質體</li>
+<li>人類基因體大小：2900 Mb</li>
+<li>核糖體為 80S ( 60S+40S )</li>
+<li>藉由有性生殖交換遺傳訊息</li>
+</ul>
+<h2 id="細菌內部結構"><a class="header" href="#細菌內部結構">細菌內部結構</a></h2>
+<p>染色體 ( Chromosome )：染色質經高度摺合的區域，又稱擬核區 ( Nucleoid Region )</p>
+<p>核糖體 ( Ribosome )：經 30S 和 50S 兩個次單元組合形成 70S 的核醣體</p>
+<p>內含體 ( Inclusion Body )：儲存能量或是一些特殊物質</p>
+<ol>
+<li>異染體 ( Metachromatic Granules / Volutin )：儲存磷酸鹽</li>
+<li>Polysaccharide Granules：儲存能量</li>
+<li>Lipid Granules：儲存能量</li>
+<li>Sulfur Granules：儲存能量</li>
+<li>氣胞 ( Gas Vacuoles )：調節浮力</li>
+<li>磁小體 ( Magnetosome )：分解雙氧水、引導細胞對應地磁移動，可作為藥物載體</li>
+</ol>
+<p>質體 ( Plasmid )</p>
+<p>細胞質液 ( Cytosol )</p>
+<p>細胞膜 ( Plasma Membrane )</p>
+<ul>
+<li>組成：雙層磷脂質，大部分缺少固醇類 ( Sterol )，但具有相似物質藿烷類 ( Hopanoid )</li>
+<li>功能：
+<ol>
+<li>防水</li>
+<li>感知外界</li>
+<li>物質交換</li>
+<li>電子傳遞鏈</li>
+<li>分泌作用</li>
+</ol>
+</li>
+</ul>
+<p>細胞壁 ( Cell Wall )</p>
+<ul>
+<li>組成：兩種肽聚醣 N-Acetylmuramic Acid ( NAM 和 N-Acetylglucosamine ( NAG ) 交錯排列，再由小胜肽鏈將肽聚醣 ( Murein / PDG, Peptidoglycan ) ) 連結在一起</li>
+<li>功能： 
+<ol>
+<li>具有通透性</li>
+<li>維持彈性</li>
+</ol>
+</li>
+<li>轉肽作用 ( Transpeptidation Reaction )
+<ol>
+<li>側支與側支胜肽鏈的鍵結作用，通常是在 NAM 上的 Lysine 與反向的胜肽連結</li>
+<li>藥物抑制：妨礙此進行，使細菌細胞壁鬆散進而死亡
+<ol>
+<li>β-lactam 類抗生素：如青黴素</li>
+<li>萬古黴素 ( Vancomycin )：會接在頂端胺基酸以阻礙轉肽作用</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<hr />
+<p>格蘭氏菌的細胞壁比較</p>
+<ul>
+<li>格蘭氏陽性菌 ( G＋ )
+<ul>
+<li>較厚的肽聚醣中鑲嵌化學物質</li>
+<li>如金黃色葡萄球菌的肽聚醣中鑲嵌壁磷酸 ( Teichoic Acid ) 和脂壁磷酸 ( Lipoteichoic Acid )</li>
+</ul>
+</li>
+<li>格蘭氏陰性菌 ( G－ )
+<ul>
+<li>細胞質膜 ( Cytoplasmic Membrane )：與細胞質接觸</li>
+<li>胞質間隙 ( Periplasmic Space )：位於兩膜之間，抗生素分解酶的作用位置</li>
+<li>外膜 ( Outer Membrane )：與外界接觸，其上有脂多醣 ( Lipopolysaccharide )
+<ul>
+<li>脂多醣 ( LPS, Lipopolysaccharide )：與內毒素 (Endotoxin )有關
+<ol>
+<li>Lipid A：最主要對人及動物產生內毒素的結構</li>
+<li>Core
+<ul>
+<li>短鏈醣類，不同菌種組成醣類會稍有不同</li>
+<li>其中一種特殊的醣類為 2-Keto-3-Deoxy-Octanoate ( KDO )</li>
+</ul>
+</li>
+<li>O-Antigen：跟環境接觸
+<ul>
+<li>為重複串接的短鏈醣</li>
+<li>具抗原性，可做血清學的測試</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>無法使用革蘭氏染色法區分</p>
+<ul>
+<li>細胞壁成分非肽聚醣
+<ul>
+<li>如分枝桿菌屬的肺結核分枝桿菌，其細胞壁為 Mycolic Acid</li>
+<li>可改使用抗酸性染色法 ( Acid Fast )</li>
+</ul>
+</li>
+<li>缺乏細胞壁
+<ul>
+<li>Mycoplasmas：具有固醇 ( Sterol )以增加穩定性</li>
+<li>Chlamydia：格蘭氏陰性菌，但不含PDG</li>
+<li>Protoplasts：細胞壁受損的細菌在等張溶液中並不會破裂，再回到充滿營養的地方便能存活</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="細菌外部結構"><a class="header" href="#細菌外部結構">細菌外部結構</a></h2>
+<p>醣盞 ( Glycocalyx )</p>
+<ul>
+<li>大部分由醣組成，少部分為蛋白質</li>
+<li>依厚度跟黏性區分
+<ul>
+<li>莢膜 ( Capsule )：較緊密</li>
+<li>黏液層 ( Slime Layer )：較鬆散</li>
+</ul>
+</li>
+<li>功能
+<ul>
+<li>黏附到其他細菌或宿主，與生物膜 ( Biofilm ) 形成有關</li>
+<li>抗原性 ( Antigenic ) 差，能保護細菌，抗吞噬細胞的吞噬作用</li>
+</ul>
+</li>
+</ul>
+<p>鞭毛 ( Flagella )</p>
+<ul>
+<li>功能：像推進器，讓細菌能運動</li>
+<li>組成：由鞭毛蛋白次單元 ( Flagellin Subunits ) 組成，並有三部分
+<ul>
+<li>Filament：由鞭毛蛋白 ( Flagellin ) 組成的細長螺旋構造</li>
+<li>Hook：彎曲的鞘</li>
+<li>Basal Body：由環形構造堆疊而成，並且鑲嵌在細胞壁</li>
+</ul>
+</li>
+<li>不同的名稱：鞭毛數不同
+<ul>
+<li>Monotrichous：一條鞭毛</li>
+<li>Lophotrichous：很多條鞭毛</li>
+<li>Peritrichous：表面佈滿鞭毛</li>
+</ul>
+</li>
+<li>軸絲 ( Axial Filament )：使螺旋體門 ( Spirochaetes ) 的細菌像蛇一樣的移動方式</li>
+<li>表現抗原性 ( Antigenic )</li>
+<li>趨化作用 ( Chemotaxis )：尋找營養或是遠離毒素，解釋為什麼細菌要移動</li>
+</ul>
+<p>纖毛 ( Fimbriae ) 和線毛 ( Pili )
+-纖毛為從細胞膜延伸出的像髮的絲狀構造，比鞭毛短，其中纖毛數量較多且通常較線毛長</p>
+<ul>
+<li>Pili 主要出現在格蘭氏陰性菌 ( Gram - )上，由 Pilin Subunits 組成，並且幫助細菌黏附在人類細胞上引發感染</li>
+<li>性線毛 ( Sex Pilus )：於接合傳遞 ( Conjugation ) 中連接兩交配中的細菌 ( Male：Donor / Female：Recipient )，使基因能夠水平傳遞，Sex Pilus 只能在格蘭氏陰性菌上找到</li>
+</ul>
+<hr />
+<h2 id="細菌複製--bacterial-replication-"><a class="header" href="#細菌複製--bacterial-replication-">細菌複製 ( Bacterial Replication )</a></h2>
+<ol>
+<li>細菌以二分裂法 ( Binary Fission ) 進行複製，並遵循以下步驟
+<ol>
+<li>延長細胞且複製DNA</li>
+<li>延伸到兩倍菌體長度時，細胞壁和細胞膜往中央凹陷，準備分裂</li>
+<li>Cross-wall ( 中央隔板 ) 形成並完全分離兩組DNA</li>
+<li>菌體完全分離</li>
+</ol>
+</li>
+<li>細胞壁合成 ( Cell Wall Biosynthesis )
+<ul>
+<li>球狀菌
+<ul>
+<li>在中央形成新的肽聚糖，形成中隔 ( Septum )</li>
+<li>最後形成兩個子細胞，子細胞由一新一舊兩個半球組成，參考圖A</li>
+</ul>
+</li>
+<li>桿菌
+<ul>
+<li>在分裂期前的生長期，在細胞側邊就會形成新的細胞壁，但不會在兩極形成，被認為是由MreB Homologues ( 一種肌動蛋白 ) 的位置決定</li>
+<li>分裂開始時，從中央開始做肽聚糖的細胞壁合成，並且由 FtsZ 蛋白聚合形成Z ring，作為分裂位</li>
+<li>最後分離產生一個新的極 ( Pole ) 和一個舊的極
+3.細菌孢子 ( Bacterial Spores )</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>有些細菌能夠形成孢子度過惡劣的環境，保護遺傳物質，例如：梭菌屬 ( Clostridium )</li>
+<li>過程
+<ul>
+<li>遺傳物質複製後移到一端</li>
+<li>細胞膜及細胞壁凹陷形成隔板，並使細胞質中充滿 Dipicolinic acid 防禦熱、脫水、放射線以及化學物質以保護遺傳物質</li>
+<li>形成雙層肽聚糖膜的孢子並釋出</li>
+<li>遇到合適環境時，出芽 ( Germination ) 重新生長為細菌</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="細菌的生長"><a class="header" href="#細菌的生長">細菌的生長</a></h2>
+<p>細菌的生長指的並非單一個體的成長，而是指整個細菌群落中細菌數量或是整體重量的增加</p>
+<p>影響生長的因素</p>
+<ul>
+<li>物理因子
+<ul>
+<li>溫度：多數致病菌屬常溫菌 ( Mesophiles )；嗜熱菌 ( Hyperthermophiles )則在海底火山附近</li>
+<li>pH 值：多數細菌生長在中性環境，部分細菌如乳酸菌適合酸性環境，霍亂弧菌適合鹼性環境</li>
+<li>滲透壓：細菌於不適合的滲透壓中無法生存，應用在食物保存上</li>
+</ul>
+</li>
+<li>化學因子
+<ul>
+<li>氧氣
+<ul>
+<li>絕對需氧菌 ( Obligate Aerobe )：只存在有氧環境中，具備超氧化物岐化酶 ( Superoxide Dismutase, SOD ) 作為抗氧化劑、過氧化氫酶 ( Catalase ) 來消除自由基</li>
+<li>兼性厭氧菌 ( Facultative Anaerobe )：傾向有氧，但無氧也能生存，一樣有SOD 和 Catalase</li>
+<li>耐氧菌 ( Aerotolerant Anaerobe )：對氧氣濃度無要求</li>
+<li>絕對厭氧菌 ( Strict Anaerobe )：只在無氧環境生存，腸道中很多</li>
+<li>微需氧菌 ( Microaerophile )：在特定濃度才能存活，如：胃幽門桿菌</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="細菌生長曲線--bacterial-growth-curve-"><a class="header" href="#細菌生長曲線--bacterial-growth-curve-">細菌生長曲線 ( Bacterial Growth Curve )</a></h2>
+<ol>
+<li>延遲期 ( Lag Phase )：細菌生長初期需適應新環境，因此曲線改變幅度不大、變化不明顯</li>
+<li>指數生長期 ( Log Phase/Exponential Phase )：適應環境後快速以二分裂 ( Binary Fission )生長，分裂所需的時間則依菌種有所不同，如大腸桿菌為 20 分鐘左右</li>
+<li>穩定期 ( Stationary Phase )：養分消耗，細菌死亡率等於新生率，趨向平衡。此時容易累積突變</li>
+<li>死亡期 ( Death Phase )：養分消耗完畢，細菌死亡</li>
+</ol>
+<h2 id="生物膜--biofilm-"><a class="header" href="#生物膜--biofilm-">生物膜 ( Biofilm )</a></h2>
+<ol>
+<li>一群細菌附在固態物體上 ( 如器官、管腺 )，釋放多醣體、蛋白質等形成胞外聚合物 ( EPS,Extracellular Polymeric Substance )，也會釋放黏性物質加強黏著力和吸引更多不同菌種的細菌附著</li>
+<li>特殊的微環境使細菌產生生理特性的改變，如抗紫外線、抗藥性等</li>
+<li>細菌即使黏附在生物膜上仍可剝離，導致再度感染</li>
+</ol>
+<hr />
+<h2 id="細菌的代謝"><a class="header" href="#細菌的代謝">細菌的代謝</a></h2>
+<p>細胞壁由肽聚糖 ( PDG, Peptidoglycan ) 組成，以兩種糖衍生物：NAG ( N-Acetylglucosamine ) 和 NAM ( N-Acetylmuramic Acid ) 交替相連形成的多醣鏈做為骨架，兩者由肽鍵橫向連結</p>
+<p>ATP 在分解和合成中的角色</p>
+<ul>
+<li>分解作用 ( Catabolism )：大分子降解為單元體所產生的能量將促成 ATP 的形成</li>
+<li>合成作用 ( Anabolism )：單元體利用 ATP 的能量聚合為大分子</li>
+</ul>
+<p>x磷酸化 ( Phosphorylation ) 生成 ATP 的方法</p>
+<ul>
+<li>受質階層磷酸化 ( Substrate-level Phosphorylation )：Pi 直接自供應者轉給ADP，如糖解作用</li>
+<li>氧化磷酸化 ( Oxidative Phosphorylation )：質子動力勢 ( Proton Motive Force ) 驅動。H+ 順濃度梯度跨膜內流會產生能量合成ATP，是最主要產生ATP 的方式，如電子傳遞鏈</li>
+<li>光合磷酸化 ( Photophosphorylation )：與氧化磷酸化類似，但必須靠光能驅動，如光合作用</li>
+</ul>
+<p>糖解作用</p>
+<ul>
+<li>有氧：細菌與真核細胞的差異
+<ul>
+<li>電子傳遞鏈位置：細菌的電子傳遞鏈位於細胞膜上、真核細胞則位於粒線體内膜上</li>
+<li>ATP 合成數量：細菌2 H+ 合成 1 ATP、1 NADH 產生 3 ATP、1 FADH2 產生 2 ATP。真核細胞則是 4 個 H+ 合成一個ATP、1 NADH 產生 2.5 個 ATP</li>
+</ul>
+</li>
+<li>無氧
+<ul>
+<li>丙酮酸不進入檸檬酸循環而是還原成其他化合物；電子的最終接收者並非氧氣，而是無機鹽類</li>
+<li>消耗一 NADH 產生的 ATP 較少</li>
+<li>人類的腸胃道裡有許多進行無氧呼吸的兼性厭氧菌 ( Facultative Anaerobic Bacteria )，如有微生物能發酵產生 Butyric Acid，調節 T 細胞的分化，進而調節免疫反應</li>
+<li>工業應用：乳酸菌產生乳酸；酵母菌產生酒精</li>
+</ul>
+</li>
+<li>其他大分子物質的代謝
+<ul>
+<li>醣類代謝為中央代謝的主軸，因其他物質在代謝的過程中都會形成醣類代謝的中間產物</li>
+<li>蛋白質或肽類：經蛋白酶或肽酶分解成胺基酸，再轉化成丙酮酸或 TCA Cycle 的中間產物</li>
+<li>脂類：經脂酶分解成甘油和脂肪酸，甘油轉化成 GAP；而脂肪酸 β-oxidation 轉化成 Acetyl-CoA</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p>能量的利用</p>
+<p>細胞膜上的主動運輸 ( Active Transport )</p>
+<ol>
+<li>鞭毛運動</li>
+<li>生物合成 ( Biosynthesis )：簡單物質在生物體內經酶催化後轉變為更複雜物質的多步驟過程
+<ul>
+<li>醣類的生物合成
+<ul>
+<li>肝糖：細菌在G6P 上加ATP 形成ADPG；動物則加上UTP 形成UDPG 來聚合成肝糖</li>
+<li>肽聚醣 ( Peptidoglycan )
+<ul>
+<li>F6P＋UTP → UDPNAc ( UDP-N-Acetylglucosamine ) → Peptidoglycan</li>
+<li>UDPNAc 為 UDP-NAG 與 UDP-NAM 交錯排列的產物</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr />
+<p>基因</p>
+<h2 id="細菌基因體與染色體"><a class="header" href="#細菌基因體與染色體">細菌基因體與染色體</a></h2>
+<p>遺傳為性狀傳遞的過程，而性狀的前驅則為基因</p>
+<p>基因體 ( Genome )：一個生物所有遺傳物質的總和；以細菌來說基因體包括染色體與質體
+細菌染色體的特徵：最常見是單套 ( One Copy/Haploid )、封閉環狀 ( Closed + Circular )、雙股螺旋 ( dsDNA ) 的染色體，通常與細胞膜相連接，例外：線形染色體、帶多個環形的染色體</p>
+<p>擬核區 ( Nucleoid )</p>
+<ul>
+<li>染色體在細胞質內並非散開的，而是將細菌染色體濃縮</li>
+<li>佔細菌細胞質很大一部分</li>
+<li>主要成分為DNA 分子 ( 佔60％ )，其餘還有少量蛋白質 ( 主要是轉錄因子蛋白質，非組蛋白，但功能近似組蛋白，使 DNA 分子維持超螺旋結構 )及 RNA 分子 ( 主要是mRNA ) </li>
+</ul>
+<p>質體 ( Plasmid DNA )</p>
+<ol>
+<li>染色體外的核酸物質，與染色體最大的差別在於即使失去也不會死亡</li>
+<li>小型、雙股螺旋的環形DNA 分子，比染色體小 ( 染色體以百萬鹼基為單位，質體多以千為單位 ) </li>
+<li>質體的複製不被染色體影響 ( 完全不同步 )，大小、套數、基因組成有許多種類，屬於高度變異</li>
+<li>革蘭氏陽性和陰性菌都有質體，其中G(-)中的質體複雜程度較高，且一隻細菌可能同時含有多種</li>
+<li>功能
+<ul>
+<li>基因轉殖之載體 ( Vector )</li>
+<li>攜帶並散播抗藥性基因 ( Antibiotic Resistance Gene )</li>
+<li>產生致病因子 ( Pathogenic Factors )，如炭疽桿菌的外毒素 ( Exotoxins )</li>
+<li>製造還原酶 ( Reductase Enzyme )，讓微生物不受環境中重金屬 ( 如汞、銀 )影響</li>
+<li>形成線毛 ( Pili/Fimbriae )，用來黏附在宿主或其他細菌身上</li>
+</ul>
+</li>
+</ol>
+<h2 id="細菌遺傳訊息的利用方式"><a class="header" href="#細菌遺傳訊息的利用方式">細菌遺傳訊息的利用方式</a></h2>
+<p>基因複製 ( Replication )</p>
+<ul>
+<li>基本化學原理與真核生物一樣</li>
+<li>透過旋轉酶 ( Gyrase ) 及解旋酶 ( Helicase ) 解開 DNA 的雙股螺旋結構 ( Gyrase 打開超螺旋，減少結構上的壓力，Helicase 解開雙螺旋 )</li>
+<li>環狀 DNA 僅有一個固定的複製起始點 ( OriC, Replication Origin )，是一個特殊序列，含氮鹼基 A、T 比例較高。 ( 此區域常常需要解旋，而兩個氫鍵連接的 A＝T 更容易打開 )</li>
+<li>起始蛋白 ( DnaA ) 辨識並與起始點結合，把雙股拉開，使鹼基裸露，再透過 DNA 聚合酶複製</li>
+<li>合成結束後兩個染色體分子環套環，因此需要再分離
+<ul>
+<li>拓樸異構酶 Ⅳ ( Topoisomerase Ⅳ )：Topo IV 可以將雙股 DNA 切開，並把 DNA 拉出來，將兩個環狀DNA 分離，再將切開的位置黏合</li>
+<li>XerCD 重組酶：XerCD 重組酶可以辨識雙股DNA 上面的dif ( 下圖框框處 ) 序列，進行單股DNA 的交換，形成兩個獨立的環狀染色體</li>
+</ul>
+</li>
+<li>半保留複製，過程中雙股同時複製，但由於DNA 分子延長具有方向性 ( 5’ → 3’ )，故產生領先股 ( Leading Strand )及延遲股 ( Lagging Strand )的差異
+※補充：雖有領先股及延遲股的差異，但複製時兩股的速度一致，且位置都在複製叉附近</li>
+<li>領先股 ( Leading Strand ) 的延長：解旋後，對應的模板股為3’端到5’端，故新複製的DNA可以順著解旋方向，由DNA 聚合酶 3 號 ( DNA Polymerase Ⅲ )進行連續性的串接</li>
+<li>延遲股 ( Lagging Strand ) 的延長：解旋後，對應的模板股為5’端到3’端，故而會產生許多遠離複製叉 ( Replication Fork ) 的新股。複製時，會先以引子酶 ( Primase ) 合成引子 ( RNA 片段 )，再透過 DNA 聚合酶3 號延長向3’延長 ( 約1 kb )，由DNA 聚合酶1 號去除引子，補上 DNA，最後再由 DNA 連接酶 ( DNA Ligase ) 連接岡崎片段 ( Okazaki Fragment )</li>
+</ul>
+<h2 id="基因表現--expression-"><a class="header" href="#基因表現--expression-">基因表現 ( Expression )</a></h2>
+<p>中心法則：DNA 轉錄 ( Transcription ) 成RNA，RNA 轉譯 ( Translation ) 成蛋白質</p>
+<p>基因為能被生物體製造出有功能的產物之 DNA 片段。基因表現則是透過轉譯出蛋白質、RNA，來維持生物體的機能</p>
+<p>原核生物的基因結構</p>
+<ul>
+<li>有90％以上的核酸訊息可以做出最終產物</li>
+<li>不具有內含子 ( Intron )，僅有外顯子 ( Extron )</li>
+<li>轉錄及轉譯會同時發生。且細菌的一條 RNA 上有多個轉譯起始點，合成蛋白時，可見 RNA 上附著許多核醣體，稱為多聚核醣體現象 ( Polyribosome )，此乃細菌能生長快速的原因</li>
+</ul>
+<p>順反子 ( Cistron )：又稱為作用子，即一段能轉譯出功能性蛋白質的RNA</p>
+<ul>
+<li>單順反子 ( Monocistron )：一條mRNA 轉譯出一段多肽，常見於真核生物</li>
+<li>多順反子 ( Polycistron )：一條mRNA 轉譯出超過一條多肽，常見於原核生物</li>
+<li>概念來自遺傳學中的順反重組試驗 ( 為了確定交換片段究竟在一個基因內還是屬於兩個基因的試驗 ) 簡言之，順反子在一定條件下與基因同義</li>
+</ul>
+<p>操縱組 ( Operon )：執行同一個代謝路徑的基因，於染色體上接續排列，受到同一操縱子調控，mRNA 可被轉譯成許多蛋白質，共同完成某代謝路徑</p>
+<ul>
+<li>操縱子 ( Operator )：一段 DNA，為調節蛋白或抑制蛋白的接合位，下游轉錄作用的開關</li>
+<li>啟動子 ( Promoter )：一段 DNA，為 RNA 聚合酶的接合位，轉錄的起始點</li>
+<li>結構基因 ( Structural Gene )：可以被轉錄、轉譯出蛋白質並表現遺傳訊息的基因</li>
+</ul>
+<p>非編碼基因：最終產物是RNA</p>
+<ul>
+<li>Ribosomal DNA：Ribosomal DNA 轉錄出Ribosomal RNA，與蛋白質結合，形成核醣，Ribosomal RNA 在細菌中高度保留，常見5S、16S、23S。多為多套體 ( Multiple Copies )</li>
+<li>Transfer DNA：轉錄出 Transfer RNA，將核酸訊息翻譯成胺基酸，並將胺基酸帶至核醣體串接</li>
+<li>Noncoding DNA：不被轉譯出功能性蛋白，但可行轉錄後調節 ( Post-transcriptional Control )，常見作用點會結合在 5’UTR ( Untranslated Region )及 3’UTR處，原核及真核生物皆具有 Noncoding RNA</li>
+</ul>
+<p>調節</p>
+<ul>
+<li>細菌60～80%的基因是持續表現且不受控制的，如糖解的酵素</li>
+<li>細菌的基因調控通常發生在轉錄之前 ( Pre-transcriptional Control )</li>
+<li>基因的表現與否是以被轉錄出的 mRNA 多寡來判斷</li>
+<li>轉錄前的調控機轉</li>
+<li>誘導型 ( Induction )：基因關閉，需要使用時才會被開啟
+<ul>
+<li>平常由調節基因 ( Regulatory Gene )製造的抑制蛋白 ( Active Repressor )會與操縱子結合，使操縱組的轉錄作用無法進行</li>
+<li>當環境中有誘導物 ( Inducer )可和抑制蛋白結合，使其失去活性而無法與操縱子結合，便可轉錄出下游基因</li>
+<li>當誘導物存在時，被轉錄轉譯出的酵素稱為誘導酵素 ( Inducible Enzyme )</li>
+</ul>
+</li>
+<li>抑制型 ( Repression )：基因開啟，環境中存在有輔抑制物 ( Co-repressor )才會被關閉
+<ul>
+<li>平常由調節基因製造的抑制蛋白不具活性，無法與操縱子結合，下游基因可持續被轉錄</li>
+<li>當環境中有輔抑制物時，輔抑制物會與抑制蛋白結合，使其具活性，並與操縱子結合，而抑制下游基因轉錄</li>
+<li>輔抑制物常是該操縱組被表現後反應生成的最終產物，過多時便會成為輔抑制物</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="基因重組--recombination-"><a class="header" href="#基因重組--recombination-">基因重組 ( Recombination )</a></h2>
+<p>一般性重組 ( General Recombination )</p>
+<ul>
+<li>同源性重組 ( Homologous Recombination )：原核與真核生物皆存在
+<ul>
+<li>前提：兩條序列高度相似 ( 不一定為同源染色體 )的雙股DNA</li>
+<li>過程
+<ul>
+<li>Donor DNA 的其中一股DNA 骨架上糖磷鍵結斷裂，形成一個缺口 ( Nick )</li>
+<li>裸露出的一條單股DNA 游離出來形成侵略股，與RecA Protein 結合後，侵略其互補序列</li>
+<li>透過內切酶和連接酶取代並交換鹼基，因為兩個DNA 序列幾乎一樣，所以上方的 DNA 可以配對到下方 DNA 的某一個模板上，進而將下方 DNA 往上推和上方 DNA 做配對</li>
+<li>由降解酶把兩邊打開後再黏好，產生DNA 局部單股交換
+-意義：讓受損的染色體得以利用與自身相似的另一條染色體來進行DNA 修復</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>非同源重組 ( Non-homologous Recombination )：真核生物較常見
+<ul>
+<li>不需要兩個幾乎一樣的DNA</li>
+<li>當其中出現DNA 斷裂時，會隨便找另一個DNA 分子接上去</li>
+<li>對兩條參與重組的DNA 相似度要求低，其機制、參與酵素都和同源性重組有極大不同</li>
+</ul>
+</li>
+</ul>
+<p>專一性位置重組 ( Site-specific Recombination )：發生於固定位置</p>
+<ul>
+<li>形成一個單股DNA 交換，可能會讓一個環型DNA 分子插入或解開</li>
+<li>需要特殊的重組酶 ( Recombinase )，重組酶會認定特定序列產生重組</li>
+</ul>
+<h2 id="遺傳訊息的變異--change-of-genetic-material-"><a class="header" href="#遺傳訊息的變異--change-of-genetic-material-">遺傳訊息的變異 ( Change of Genetic Material )</a></h2>
+<p>自發性突變 ( Internal )v.s.外源性突變 ( External )：依照突變原因進行分類</p>
+<hr />
+<table><thead><tr><th>種類</th><th>自發性突變 ( internal )</th><th>外源性突變 ( external )</th></tr></thead><tbody>
+<tr><td>說明</td><td>受內部因素影響 ( spontaneous )</td><td>受外在突變劑 ( mutagens ) 影響</td></tr>
+<tr><td>原因</td><td>DNA 修補或進行複製時發生錯誤</td><td>物理性：紫外光、X-ray 等</td></tr>
+<tr><td></td><td>增變基因 ( Mutator Gene )</td><td>化學性：DNA-reactive chemicals、鹼基類似物 ( Base Analog )，造成Missing Cooperation、插入劑 ( Intercalating Agents )</td></tr>
+</tbody></table>
+<p>物理性UV：歐美國家的人常因照射過多紫外線，易皮膚病變產生黑色素瘤，亞洲地區的人則因為皮膚有保護色而較少案例。紫外光會造成DNA 受損是因為造成兩個鄰近的Pyrimidine 產生共價鍵結，常為兩個Thymine，稱為Thymine Dimer。細菌帶有特殊酵素 ( Photolyase )可運用可見光的能量，化解兩TT 間的鍵結，使DNA 恢復正常</p>
+<p>化學性</p>
+<ul>
+<li>DNA-reactive Chemicals：如烷化劑 ( Alkylating Agent )，最毒，作用在鹼基上，使配對原則出錯，如Nitrosoguanidine。DNA 鹼基改變，數目不變</li>
+<li>鹼基類似物 ( Base Analogs )：跟鹼基長得很像，但配對原則不一樣。DNA 複製時，被用於串接，造成單一鹼基改變。DNA 鹼基改變，數目不變</li>
+<li>插入劑 ( Intercalating Agents )：長相類似鹼基對，會鑲嵌在鹼基對中間，使DNA 聚核酶多放或少放，此狀況稱作Insertion/Deletion。此情況不同於前兩者是造成DNA 鹼基對數目改變</li>
+</ul>
+<h2 id="突變層級"><a class="header" href="#突變層級">突變層級</a></h2>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../6/6-1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../6/6-3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../6/6-1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../6/6-3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
