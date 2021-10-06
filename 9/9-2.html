@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hant-TW" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>流行病學 - TMSCN</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="The example book covers examples.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../cover.html"><strong aria-hidden="true">1.</strong> 封面</a></li><li class="chapter-item "><a href="../intro.html"><strong aria-hidden="true">2.</strong> 前言</a></li><li class="chapter-item "><a href="../1/chapter_1.html"><strong aria-hidden="true">3.</strong> 解剖學</a></li><li class="chapter-item "><a href="../2/chapter_2.html"><strong aria-hidden="true">4.</strong> 胚胎及發育生物學</a></li><li class="chapter-item "><a href="../3/chapter_3.html"><strong aria-hidden="true">5.</strong> 組織學</a></li><li class="chapter-item "><a href="../4/chapter_4.html"><strong aria-hidden="true">6.</strong> 生理學</a></li><li class="chapter-item "><a href="../5/chapter_5.html"><strong aria-hidden="true">7.</strong> 生物化學</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../5/5-1.html"><strong aria-hidden="true">7.1.</strong> 總論</a></li><li class="chapter-item "><a href="../5/5-2.html"><strong aria-hidden="true">7.2.</strong> 醣類</a></li><li class="chapter-item "><a href="../5/5-3.html"><strong aria-hidden="true">7.3.</strong> 蛋白質</a></li><li class="chapter-item "><a href="../5/5-4.html"><strong aria-hidden="true">7.4.</strong> 脂肪酸</a></li><li class="chapter-item "><a href="../5/5-5.html"><strong aria-hidden="true">7.5.</strong> 基因</a></li></ol></li><li class="chapter-item "><a href="../6/chapter_6.html"><strong aria-hidden="true">8.</strong> 微生物</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6/6-1.html"><strong aria-hidden="true">8.1.</strong> 總論</a></li><li class="chapter-item "><a href="../6/6-2.html"><strong aria-hidden="true">8.2.</strong> 細菌</a></li><li class="chapter-item "><a href="../6/6-3.html"><strong aria-hidden="true">8.3.</strong> 病毒</a></li><li class="chapter-item "><a href="../6/6-4.html"><strong aria-hidden="true">8.4.</strong> 真菌</a></li></ol></li><li class="chapter-item "><a href="../7/chapter_7.html"><strong aria-hidden="true">9.</strong> 免疫學</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../7/7-1.html"><strong aria-hidden="true">9.1.</strong> 總論</a></li><li class="chapter-item "><a href="../7/7-2.html"><strong aria-hidden="true">9.2.</strong> innate</a></li><li class="chapter-item "><a href="../7/7-3.html"><strong aria-hidden="true">9.3.</strong> adaptive</a></li></ol></li><li class="chapter-item "><a href="../8/chapter_8.html"><strong aria-hidden="true">10.</strong> 寄生蟲學</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../8/8-1.html"><strong aria-hidden="true">10.1.</strong> 總論</a></li><li class="chapter-item "><a href="../8/8-2.html"><strong aria-hidden="true">10.2.</strong> 線蟲(nematode)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../8/8-2-1.html"><strong aria-hidden="true">10.2.1.</strong> 線蟲1</a></li><li class="chapter-item "><a href="../8/8-2-2.html"><strong aria-hidden="true">10.2.2.</strong> 線蟲2</a></li></ol></li><li class="chapter-item "><a href="../8/8-3.html"><strong aria-hidden="true">10.3.</strong> 吸蟲(trematode)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../8/8-3-1.html"><strong aria-hidden="true">10.3.1.</strong> 吸蟲1</a></li><li class="chapter-item "><a href="../8/8-3-2.html"><strong aria-hidden="true">10.3.2.</strong> 吸蟲2</a></li></ol></li><li class="chapter-item "><a href="../8/8-4.html"><strong aria-hidden="true">10.4.</strong> 絛蟲(cestode)</a></li><li class="chapter-item "><a href="../8/8-5.html"><strong aria-hidden="true">10.5.</strong> 原蟲(protozoae)</a></li><li class="chapter-item "><a href="../8/8-6.html"><strong aria-hidden="true">10.6.</strong> 節肢動物(arthropad)</a></li></ol></li><li class="chapter-item expanded "><a href="../9/chapter_9.html"><strong aria-hidden="true">11.</strong> 公共衛生學</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../9/9-1.html"><strong aria-hidden="true">11.1.</strong> 總論</a></li><li class="chapter-item expanded "><a href="../9/9-2.html" class="active"><strong aria-hidden="true">11.2.</strong> 流行病學</a></li></ol></li><li class="chapter-item "><a href="../10/chapter_10.html"><strong aria-hidden="true">12.</strong> 藥理學</a></li><li class="chapter-item "><a href="../11/chapter_11.html"><strong aria-hidden="true">13.</strong> 病理學</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">TMSCN</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/supbg1/TMSCN" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/supbg1/TMSCN/edit/main/src/9/9-2.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                        
+
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="流行病學"><a class="header" href="#流行病學">流行病學</a></h1>
+<p>研究疾病在人群中的分布方式以及影響或決定這種分布之因素的學問</p>
+<p>目的：確定病因 ( Etiology ) 及影響人們患病的因素，以預防進而降低疾病的發病率及死亡率</p>
+<h2 id="預防和治療"><a class="header" href="#預防和治療">預防和治療</a></h2>
+<ul>
+<li>初級預防：公衛人員致力於此，防止疾病的開始排除危險因子如抽菸、環境汙染</li>
+<li>次級預防：臨床醫師致力於此，止疾病惡化或復發</li>
+<li>三級預防：復健師、呼吸治療師致力於此，防止功能性上的喪失</li>
+</ul>
+<hr />
+<h1 id="監測-surveillance"><a class="header" href="#監測-surveillance">監測 Surveillance</a></h1>
+<p>定義：有系統地去收集、分析、解釋健康相關資料</p>
+<p>目的：</p>
+<ul>
+<li>監測疾病發生率、盛行率之改變</li>
+<li>可推廣到監測環境中危險因子之變化以評估事件嚴重程度</li>
+<li>監測疾病發生率和危險因子之變化，用於檢視政府策執行力</li>
+<li>監測疫苗推廣之涵蓋率，用於檢對目標族群的保護力</li>
+</ul>
+<table><thead><tr><th>被動監測 ( Passive Survillance )</th><th>主動監測 ( Active Survillance )</th></tr></thead><tbody>
+<tr><td>依賴現有之醫療體系及人員</td><td>政府額外撥出經費，請專人推動之計畫</td></tr>
+<tr><td>癌症、性病、傳染性疾病</td><td>大型傳染病 ( Ex: 伊波拉、茲卡 )</td></tr>
+<tr><td>容易啟動，便宜，不需額外人員</td><td>難以啟動，昂貴，需額外人力</td></tr>
+<tr><td>經常不完整、漏報</td><td>難以啟動，昂貴，需額外人力</td></tr>
+</tbody></table>
+<h2 id="資料收集"><a class="header" href="#資料收集">資料收集</a></h2>
+<p>不同層級醫療院所，所收容之病患嚴重程度不，所蒐集之資料也不同，須按研究對象選擇資料</p>
+<p>社區家訪</p>
+<ul>
+<li>適合輕微臨床症狀</li>
+<li>處於疾病早期階段</li>
+<li>無法精確判斷疾病分類</li>
+</ul>
+<p>診所資料</p>
+<ul>
+<li>明顯臨床症狀</li>
+</ul>
+<p>醫院資料</p>
+<ul>
+<li>嚴重臨床症狀</li>
+<li>最為精準、詳細</li>
+<li>存在偏差如軍醫院男性多</li>
+</ul>
+<h2 id="人年-person-year"><a class="header" href="#人年-person-year">人年 Person year</a></h2>
+<p>用來表示觀測 ( 追蹤 ) 的單位，因觀測有對象及時間長短</p>
+<p>舉例，觀測兩個對象三年，A先生在觀測到兩年底的時候就不能觀測了，B先生則觀測至三年完整結束，從年的角度看，第一年有兩個人，第二年也有兩個人，第三年只有一個人，共5個人年，從人的角度看，A觀測了兩年，B觀測了三年，共觀測五個人年</p>
+<p>人年只是較為常用的 觀測對象-時間 單位，可替換為像人-季 ( person-quarter ) 或 千人-年 ( thousand people-year ) 等等其他的單位。</p>
+<hr />
+<h1 id="疾病率-morbidity"><a class="header" href="#疾病率-morbidity">疾病率 Morbidity</a></h1>
+<h2 id="發生率-incidence-rate"><a class="header" href="#發生率-incidence-rate">發生率 Incidence rate</a></h2>
+<p>定義：在特定時間內，原本無病但具罹病風險的人得病的人口比例
+公式： </p>
+<p>\[ \frac{特定時間內發病的新個數}{觀測具罹病風險的人特定時間} \]</p>
+<p>舉例：</p>
+<p>對於一個包含1000人的未患病的風險人群進行為期兩年的觀察之後，發現有28人患病，則發生率為14例/千人年</p>
+<h2 id="發病比-incidence-proportion"><a class="header" href="#發病比-incidence-proportion">發病比 Incidence proportion</a></h2>
+<p>定義：在特定時間後，原本無病但具罹病風險的人得病的人口比例
+公式</p>
+<p>\[ \frac{特定時間後發病的新個數}{原本具罹病風險的人} \]</p>
+<p>舉例：</p>
+<p>對於一個包含1000人的未患病的風險人群進行為期兩年的觀察之後，發現有28人患病，則發生率為28例/千人</p>
+<h2 id="侵襲率-attack-rate"><a class="header" href="#侵襲率-attack-rate">侵襲率 Attack rate</a></h2>
+<p>定義：又稱罹患率，為短時間的發生率，不需要去定義區間長度，實質為proportion</p>
+<p>公式：</p>
+<p>\[ \frac{暴露人口中的新病例數}{總暴露人口數} \]</p>
+<p>舉例：</p>
+<p>在一次暴發時98人中共70人感染疾病，則侵襲率為0.714</p>
+<h2 id="盛行率-prevalence-rate"><a class="header" href="#盛行率-prevalence-rate">盛行率 Prevalence Rate</a></h2>
+<p>定義：在表示某個時間點（或區間），患某病的所有病例數(包含已存在或治癒的病例)佔全人口數的比例，稱為點盛行率（或期盛行率）</p>
+<p>公式</p>
+<p>\[ \frac{特定區間內的所有病例數}{觀察的所有個體數} \]</p>
+<ul>
+<li>點盛行率 ( Point Prevalence )：某個時間點的盛行率，如問「目前有沒得某種病？」</li>
+<li>期間盛行率 ( Period Prevalence )：某段時間內的盛行率，如問 「過去n年有沒有得過某種病？」</li>
+</ul>
+<h2 id="影響發生率及盛行率的因素"><a class="header" href="#影響發生率及盛行率的因素">影響發生率及盛行率的因素</a></h2>
+<ol>
+<li>疾病的判定及標準</li>
+<li>訪問方法</li>
+<li>校正與否
+<ul>
+<li>例如計算不同年份的子宮癌發生率，接受過子宮頸切除術不算罹病風險對象需要剔除</li>
+</ul>
+</li>
+<li>醫院資料可能具有某種篩檢或特性</li>
+</ol>
+<h2 id="死亡率-mortality-rate"><a class="header" href="#死亡率-mortality-rate">死亡率 Mortality rate</a></h2>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../9/9-1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../10/chapter_10.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../9/9-1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../10/chapter_10.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
