@@ -244,7 +244,7 @@
 <p>舉例：</p>
 <p>在一次暴發時98人中共70人感染疾病，則侵襲率為0.714</p>
 <h2 id="盛行率-prevalence-rate"><a class="header" href="#盛行率-prevalence-rate">盛行率 Prevalence Rate</a></h2>
-<p>定義：在表示某個時間點（或區間），患某病的所有病例數(包含已存在或治癒的病例)佔全人口數的比例，稱為點盛行率（或期盛行率）</p>
+<p>定義：在表示某個時間點 ( 或區間 ) ，患某病的所有病例數(包含已存在或治癒的病例)佔全人口數的比例，稱為點盛行率 ( 或期盛行率 ) </p>
 <p>公式</p>
 <p>\[ \frac{特定區間內的所有病例數}{觀察的所有個體數} \]</p>
 <ul>
@@ -262,7 +262,69 @@
 </li>
 <li>醫院資料可能具有某種篩檢或特性</li>
 </ol>
-<h2 id="死亡率-mortality-rate"><a class="header" href="#死亡率-mortality-rate">死亡率 Mortality rate</a></h2>
+<hr />
+<h1 id="死亡率-mortality-rate"><a class="header" href="#死亡率-mortality-rate">死亡率 Mortality rate</a></h1>
+<h2 id="不做調整的粗略死亡率"><a class="header" href="#不做調整的粗略死亡率">不做調整的粗略死亡率</a></h2>
+<p>定義：一族群中，每單位時間的死亡數目</p>
+<p>公式</p>
+<p>\[ \frac{特定區間內的特定族群所有死亡數}{觀察的所有個體數} \]</p>
+<p>通常以年作為單位時間：</p>
+<p>\[ \frac{一年總死亡人數}{年中總人口數} \]</p>
+<h2 id="致死率-case-fatality-rate"><a class="header" href="#致死率-case-fatality-rate">致死率 Case-fatality Rate</a></h2>
+<p>定義：探討多少比例的病患於確診後的特定時間內死亡 </p>
+<p>公式</p>
+<p>\[ \frac{在某時間內因特定疾病死亡的人口}{有特定疾病的人口數} \]</p>
+<h2 id="死亡分率--proportional-mortality"><a class="header" href="#死亡分率--proportional-mortality">死亡分率  Proportional Mortality</a></h2>
+<p>定義：在全部死亡的人當中，因該病死亡的比例 ( proportion )</p>
+<p>公式</p>
+<p>\[ \frac{在某時間內因特定疾病死亡的人口}{某時間內的總人口數} \]</p>
+<h2 id="死亡率-致死率-死亡分率比較"><a class="header" href="#死亡率-致死率-死亡分率比較">死亡率 致死率 死亡分率比較</a></h2>
+<p>死亡率：一群人因該疾病死的比率</p>
+<p>致死率：得了該病多容易死</p>
+<p>死亡分率：全部死因中因該疾病死亡的比率</p>
+<p>三者並無絕對的相關性，都在講不同的事情</p>
+<h2 id="潛在生命損失年數-ypll-year-of-potential-life-lost"><a class="header" href="#潛在生命損失年數-ypll-year-of-potential-life-lost">潛在生命損失年數 YPLL, Year of Potential Life Lost</a></h2>
+<p>一種測量過早/早期死亡 ( Premature Mortality ) 的方法。死亡率無法反映與年齡的關係，而年輕人死亡顯然要比年長者造成未來生產年損失更大；而YPLL 可以反映出死亡平均年齡低的死因及其社會影響，YPLL 上升，代表其好發於年輕人口 </p>
+<p>定義：所有早於標準年紀死亡的人口原本可以活到標準年紀的年數總和</p>
+<p>計算</p>
+<ol>
+<li>決定標準年齡：臺灣為75 歲 </li>
+<li>YPLL＝標準年齡－死亡年齡 </li>
+<li>把所有人的YPLL 相加，所得即為某死因之YPLL</li>
+</ol>
+<h2 id="發生率--incidence--和死亡率--mortality--的解讀"><a class="header" href="#發生率--incidence--和死亡率--mortality--的解讀">發生率 ( Incidence ) 和死亡率 ( Mortality ) 的解讀</a></h2>
+<p>死亡率可作為衡量發生率的指標 </p>
+<ul>
+<li>條件：患者致死率高、疾病病程短 </li>
+<li>舉例：胰臟癌是高致命性的疾病，且患者常在被確診後數月內死亡，因此其死亡率接近發生率</li>
+</ul>
+<h2 id="死亡率校正"><a class="header" href="#死亡率校正">死亡率校正</a></h2>
+<h3 id="直接年齡標準化--direct-age-adjustment-"><a class="header" href="#直接年齡標準化--direct-age-adjustment-">直接年齡標準化 ( Direct Age Adjustment )</a></h3>
+<p>不同族群有年齡結構上的差異，會使統計結果失準。為了得出一個可以直接在不同族群間比較
+的數據，必須將兩族群不同年齡層套用相同的人口模型。</p>
+<p>前提：需有標準年齡結構</p>
+<p>範例：
+| Age group | <strong>A</strong> population | <strong>A</strong> no. of deaths| <strong>A</strong> death rates | <strong>B</strong> population | <strong>B</strong> no. of deaths| <strong>B</strong> death rates |
+|---|---|---|---|---|---|---|
+| All ages | 900,000 | 862 | 96 | 900,000 | 1,130 | 126|
+| 30-49 | 500,000 | 60 | 12 | 300,000 | 30 | 10 |
+|50-69|300,000|396|132|400,000|400|100|
+|70+|100,000|406|406|200,000|700|350|</p>
+<p>※death rate為每100,000人</p>
+<p>從all ages的死亡率可發現A組的死亡率低於B組，然而每個年齡分組卻是反過來的，表示粗略的死亡率可能因為年齡的關係而產生偏誤。</p>
+<table><tbody><tr><td>Age group</td><td>standard population </td><td>A Age Specific Mortality Rates</td><td>Extected No. of Deaths </td><td>B Age Specific Mortality Rates</td><td>Extected No. of Deaths </td></tr><tr><td>30-40</td><td>800,000</td><td>12/100,000</td><td>96</td><td>9/100,000</td><td>80</td></tr><tr><td>50-69</td><td>700,000</td><td>132/100,000</td><td>924</td><td>100/100,000</td><td>700</td></tr><tr><td>70+</td><td> </td><td>406/100,000</td><td>1218</td><td>350/100,000</td><td>1050</td></tr><tr><td>total expected No. of deaths </td><td> </td> <td> </td><td>2238</td><td> </td><td>1830</td></tr><tr><td>Age adjusted</td><td> </td><td> </td><td>2238/1,800,000=124.3 per 100,000</td><td> </td><td>1800/1,800,000 =101.7 per 100,000</td></tr></tbody></table>
+<p>藉由原始資料中的死亡率乘上標準人口，得到預期在這樣的人口結構下理論的死亡人口，便可計算理論上標準人口年齡結構下的預期死亡率，可發現A組的死亡率便高於B組。</p>
+<h3 id="間接年齡標準化--標準死亡率--smr-standardized-mortality-ratio-"><a class="header" href="#間接年齡標準化--標準死亡率--smr-standardized-mortality-ratio-">間接年齡標準化 / 標準死亡率 ( SMR, Standardized Mortality Ratio )</a></h3>
+<p>使用時機</p>
+<ol>
+<li>當蒐集資料時無法獲得每個特定年齡層的死亡人數時，可以此作為資料校正，使用兩組資料互相校正</li>
+<li>當兩地區年齡層的人口數太少會導致所估計的年齡層死亡率不穩定時</li>
+<li>當兩地區的整體死亡率與年齡層結構是已知，但它們的年齡層死亡率是未知時。</li>
+</ol>
+<p>一樣用上述AB組舉例，只是此時B組的人口結構未知，也不知道標準人口數，使用A組當基準，計算B組</p>
+<table><tbody><tr><td>Age group</td><td>A population</td><td>B Age Specific Mortality Rates</td><td>Extected No. of Deaths </td></tr><tr><td>30-40</td><td>500,000</td><td>9/100,000</td><td>45</td></tr><tr><td>50-69</td><td>300,000</td><td>100/100,000</td><td>300</td></tr><tr><td>70+</td><td>100,000</td><td>350/100,000</td><td>350</td></tr><tr><td>total expected No. of deaths </td><td> </td> <td> </td><td>695</td></tr><tr><td>Age adjusted</td><td> </td><td> </td><td>695/900,000 = 77.2 per 100,000</td></tr></tbody></table>
+<p>SMR即為同在A的人口結構下，A的死亡率與B的預期死亡率比</p>
+<p>\[  SMR = \frac{7.7}{96} = 0.8 \]</p>
 
                     </main>
 
