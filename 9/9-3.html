@@ -334,6 +334,47 @@
 <p>\[  特異度 = \frac{ no disease and negative }{ have disease } \]</p>
 <h2 id="連續變相的檢測"><a class="header" href="#連續變相的檢測">連續變相的檢測</a></h2>
 <p>決定切點 ( Cutoffs )：切點位置將影響到 Sensitivity 和 Specificity</p>
+<h2 id="多重測試"><a class="header" href="#多重測試">多重測試</a></h2>
+<h3 id="序列篩檢"><a class="header" href="#序列篩檢">序列篩檢</a></h3>
+<p>第一階段篩檢：價格較低、侵入性較低、不適感較少，但敏感度及特異度通常較低，如果病人第一階段篩檢結果為陽性，便會回診進行第二階段篩檢</p>
+<p>第二階段：價格較高、侵入性較高、不適感較強，但敏感度及特異度通常較高 </p>
+<p>在序列篩檢中，Sensitivity 降低，Specificity 增加</p>
+<h3 id="平行篩檢"><a class="header" href="#平行篩檢">平行篩檢</a></h3>
+<p>只要兩個測驗有一個有陽性就是陽性</p>
+<p>使用平行篩檢法，Sensitivity 增加，Specificity 減少</p>
+<h2 id="檢測的預測值-predictive-value-of-a-test"><a class="header" href="#檢測的預測值-predictive-value-of-a-test">檢測的預測值 Predictive Value of a Test</a></h2>
+<p>意義 </p>
+<p>公共衛生方面的考慮：正確識別出患有該疾病的人的比例是多少？ </p>
+<p>臨床環境中的考慮：該患者患病的可能性是多少？</p>
+<h2 id="陰性預測值-npv-negative-predictive-value"><a class="header" href="#陰性預測值-npv-negative-predictive-value">陰性預測值 NPV, Negative Predictive Value</a></h2>
+<p>意義：檢測結果為陰性患者是否真無患病之比率 </p>
+<p>\[  NPV = \frac{ 真陰性個體數}{ 陰性結果的總個數} \]</p>
+<h2 id="陽性預測值-ppv-positive-predictive-value"><a class="header" href="#陽性預測值-ppv-positive-predictive-value">陽性預測值 PPV, Positive Predictive Value</a></h2>
+<p>意義：檢測結果為陽性患者是否真得有患病之比率 </p>
+<p>\[  NPV = \frac{ 真陽性個體數}{ 陽性結果的總個數} \]</p>
+<hr />
+<h1 id="九宮格計算"><a class="header" href="#九宮格計算">九宮格計算</a></h1>
+<table><thead><tr><th></th><th>有病</th><th>沒病</th><th>總計</th></tr></thead><tbody>
+<tr><td>陽性</td><td>a</td><td>b</td><td>c</td></tr>
+<tr><td>陰性</td><td>d</td><td>e</td><td>f</td></tr>
+<tr><td>總計</td><td>g</td><td>h</td><td>i</td></tr>
+</tbody></table>
+<p>\[  敏感度 = \frac{ a }{ g } \]</p>
+<p>\[  特異度 = \frac{ e }{ h } \]</p>
+<p>\[  盛行率 = \frac{ g }{ i } \]</p>
+<p>\[  PPV = \frac{ a }{ c } \]</p>
+<p>\[  NPV = \frac{ d }{ f } \]</p>
+<h2 id="信度重複性-reliabilityrepeatability"><a class="header" href="#信度重複性-reliabilityrepeatability">信度/重複性 Reliability/Repeatability</a></h2>
+<p>意義：檢測的一致性。重複多次檢驗時若結果差異甚大，表示此檢驗信度不高</p>
+<p>造成不同的原因</p>
+<ul>
+<li>個體的差異</li>
+<li>觀察員本身的差異</li>
+<li>觀察員之間的差異</li>
+</ul>
+<h3 id="百分比一致性percent-agreement"><a class="header" href="#百分比一致性percent-agreement">百分比一致性（Percent Agreement）</a></h3>
+<p>百分比一致性（Percent Agreement）</p>
+<hr />
 
                     </main>
 
