@@ -177,11 +177,11 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="傳染"><a class="header" href="#傳染">傳染</a></h1>
-<p>|          | 流行病學                 | 傳染性流行病學             |
-| -------- | ------------------------ | -------------------------- |
-| 研究對象 | 人類                     | 人類、傳染性因子、其他載體 |
-| 探討     | 發病個案所具有的危險因子 | 潛在危險因子               |
-| 發病原因 | 研究目的                 | 通常已知                   |</p>
+<p>|    /      | 流行病學  | 傳染性流行病學  |
+| -------- | ----- | -------- |
+| 研究對象 | 人類  | 人類、傳染性因子、其他載體 |
+| 探討     | 發病個案所具有的危險因子 | 潛在危險因子 |
+| 發病原因 | 研究目的 | 通常已知  |</p>
 <h3 id="疾病傳播媒介"><a class="header" href="#疾病傳播媒介">疾病傳播媒介</a></h3>
 <ul>
 <li>傳染性因子 ( infectious agents )：寄生蟲、細菌、真菌、原生動物、病毒、普里昂蛋白等</li>
@@ -220,7 +220,7 @@
 <p>\[ 感染力 = \frac{被感染的人數}{有感染風險的人數} \]</p>
 <h2 id="致病力-pathogenicity"><a class="header" href="#致病力-pathogenicity">致病力 Pathogenicity</a></h2>
 <p>公式</p>
-<p>\[ 致病力 = \frac{臨床已發病的人數}}{被疾病感染的人數} \]</p>
+<p>\[ 致病力 = \frac{臨床已發病的人數}{被疾病感染的人數} \]</p>
 <h2 id="毒性-virulence--病故率-case-fatality-rate"><a class="header" href="#毒性-virulence--病故率-case-fatality-rate">毒性 Virulence / 病故率 Case Fatality Rate</a></h2>
 <p>公式</p>
 <p>\[ 毒性 = \frac{死亡人數}}{已發病人數} \]</p>
@@ -317,7 +317,7 @@
 <p>\[ 侵襲率 = \frac{可能感染的人當中發病的人數}{可能感染的人數} \]</p>
 <h2 id="二次侵襲率-secondary-attack-rate"><a class="header" href="#二次侵襲率-secondary-attack-rate">二次侵襲率 Secondary Attack Rate</a></h2>
 <p>公式</p>
-<p>\[ 二次侵襲率 = \frac{所有病例數 - 開頭病例數}{可感染人數} - 開頭病例數} \]</p>
+<p>\[ 二次侵襲率 = \frac{所有病例數 - 開頭病例數}{可感染人數} - 開頭病例數 \]</p>
 <hr />
 <h1 id="assessing-the-validity-and-reliability-of-diagnostic-and-screening-tests"><a class="header" href="#assessing-the-validity-and-reliability-of-diagnostic-and-screening-tests">Assessing the Validity and Reliability of Diagnostic and Screening Tests</a></h1>
 <h2 id="生物分布"><a class="header" href="#生物分布">生物分布</a></h2>
@@ -372,9 +372,28 @@
 <li>觀察員本身的差異</li>
 <li>觀察員之間的差異</li>
 </ul>
-<h3 id="百分比一致性percent-agreement"><a class="header" href="#百分比一致性percent-agreement">百分比一致性（Percent Agreement）</a></h3>
-<p>百分比一致性（Percent Agreement）</p>
+<h3 id="百分比一致性-percent-agreement"><a class="header" href="#百分比一致性-percent-agreement">百分比一致性 Percent Agreement</a></h3>
+<p>將相同的判讀結果相加（A＋F＋K＋P）除以所有判讀數，並求得百分比</p>
+<p>然而，檢驗結果常有較大的比例為陰性，因此在計算時，會選擇忽略同時判定為陰性的個數，否則會因為d 太大而使百分比一致性被高估，因此，修正後的公式為：a÷(a＋b＋c)×100</p>
+<h3 id="kappa-一致性係數-k-k-coefficient-of-agreement"><a class="header" href="#kappa-一致性係數-k-k-coefficient-of-agreement">Kappa 一致性係數 K, K Coefficient of Agreement</a></h3>
+<p>排除隨機（By Chance）對於百分比一致性的影響 </p>
+<p>公式</p>
+<p>Po：實際觀測一致的百分比 ( Observed Agreement )，即測驗結果實際相同的機率 
+Pc：理論期望一致的百分比 ( Chance Agreement )，即測驗結果預測相同的機率 
+K 值落在－1 與1 之間，但通常介於0 與1；當完全一致時，K＝1，當完全不一致時K＝0 </p>
+<p>\[  K = \frac{ P_{O} - P_{C} }{ 1 - P_{C} } \]</p>
+<table><thead><tr><th>K</th><th>意義</th></tr></thead><tbody>
+<tr><td>0.0~0.20</td><td>極低</td></tr>
+<tr><td>0.21~0.40</td><td>一致</td></tr>
+<tr><td>0.41~0.60</td><td>中等</td></tr>
+<tr><td>0.61~0.80</td><td>高</td></tr>
+<tr><td>0.81~1.0</td><td>幾乎完全一致</td></tr>
+</tbody></table>
+<h2 id="效度與信度的關係"><a class="header" href="#效度與信度的關係">效度與信度的關係</a></h2>
+<p>曲線的寬窄代表信度，越窄信度越高
+曲線的距離真值的距離代表校度，越近校度越高</p>
 <hr />
+<h1 id="the-natural-history-of-disease-ways-of-expressing-prognosis"><a class="header" href="#the-natural-history-of-disease-ways-of-expressing-prognosis">The Natural History of Disease: Ways of Expressing Prognosis</a></h1>
 
                     </main>
 
