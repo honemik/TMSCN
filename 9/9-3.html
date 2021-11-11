@@ -407,8 +407,8 @@ K 值落在－1 與1 之間，但通常介於0 與1；當完全一致時，K＝1
 </ol>
 <p>臨床前後期分類 ( 以S 作為前後區分 )</p>
 <ul>
-<li>臨床前期（Preclinical Phase）：綠線部分，即A～S 階段</li>
-<li>臨床期（Clinical Phase）：藍線部分，即M～Outcome 階段</li>
+<li>臨床前期 ( Preclinical Phase ) ：綠線部分，即A～S 階段</li>
+<li>臨床期 ( Clinical Phase ) ：藍線部分，即M～Outcome 階段</li>
 </ul>
 <h2 id="量化預後-quantification-of-prognosis"><a class="header" href="#量化預後-quantification-of-prognosis">量化預後 Quantification of Prognosis</a></h2>
 <p>預後：預測疾病的進展或結果</p>
@@ -428,8 +428,73 @@ K 值落在－1 與1 之間，但通常介於0 與1；當完全一致時，K＝1
 <p>生病結束點</p>
 <table><thead><tr><th></th><th>明確程度</th><th>限制</th></tr></thead><tbody>
 <tr><td>Death</td><td>最高</td><td>通常無法使用在長期觀察</td></tr>
-<tr><td>Cure</td><td></td><td></td></tr>
+<tr><td>Cure</td><td>中</td><td>受到病人及診療者主觀的影響</td></tr>
+<tr><td>Remission</td><td>低</td><td>指症狀程度下降或消失，受到症狀定義的影響</td></tr>
+<tr><td>Recurrent</td><td>高</td><td>受到病人就醫頻次及診斷工具的影響</td></tr>
 </tbody></table>
+<h3 id="緩解-remission"><a class="header" href="#緩解-remission">緩解 Remission</a></h3>
+<ul>
+<li>欲觀察的症狀消失，可補足Cure 在研究上主觀的影響</li>
+<li>Remission 並不等於Cure，如病人於D1 開始流鼻水，D2 停止流鼻水，D3 又開始流鼻水，則此病人於D2 時 Remission，但並沒有Cure</li>
+</ul>
+<h3 id="復發-recurrent"><a class="header" href="#復發-recurrent">復發 Recurrent</a></h3>
+<p>一急性症狀經過一段時間緩和後，又再次發生，適用於挑不出顯著症狀之疾病</p>
+<h2 id="預後的五大指標"><a class="header" href="#預後的五大指標">預後的五大指標</a></h2>
+<h3 id="疾病致死比例率-cfr-case-fatality-rate"><a class="header" href="#疾病致死比例率-cfr-case-fatality-rate">疾病致死比例/率 CFR, Case-fatality Rate</a></h3>
+<p>公式</p>
+<p>\[ 疾病致死比例 = \frac{ 死於該疾病的人 }{ 罹患該疾病的人數 } \]</p>
+<p>\[ 疾病致死比率 = \frac{ 死於該疾病的人 }{ 有可能死於該疾病的人數 } \]</p>
+<p>適用：急症或短程、嚴重度高的疾病，如中風、心肌梗塞、急性傳染病、急性敗血症 </p>
+<h3 id="五年存活比例率-5-year-survival-rate"><a class="header" href="#五年存活比例率-5-year-survival-rate">五年存活比例/率 5-year Survival Rate</a></h3>
+<p>被診斷或開始治療五年後的存活比例</p>
+<p>公式：</p>
+<p>\[ 5年存活率 = \frac{ 接受治療五年後仍存活的人 }{ 接受治療的人數 } \]</p>
+<p>病程時長適中</p>
+<p>影響因素</p>
+<ol>
+<li>治療方式：若改善會使死亡人數下降</li>
+<li>診斷方式：若改善會使疾病能在更早期就被確診</li>
+</ol>
+<p>可能問題</p>
+<ol>
+<li>前導時間偏差 Lead Time Bias：因篩檢或診斷技術的進步，使診斷時間提前，可能讓原本五年不到就死亡變成超過五年，造成計算誤差，但實際病程不變</li>
+<li>只觀察單一時間點：A 跟B 雖然兩者五年存活比例皆為10％，但在此之前的每個時間點A 的存活比例皆高於B，可知A 治療方法優於B，且多數B 的病人在第一年即死亡</li>
+</ol>
+<h3 id="存活率-observed-survival-rate"><a class="header" href="#存活率-observed-survival-rate">存活率 Observed Survival Rate</a></h3>
+<p>生命表法 Life Table</p>
+<ol>
+<li>使用實際觀察一段時間的存活資料</li>
+<li>將追蹤時間等分切，做固定間隔紀錄</li>
+</ol>
+<p>例子：本次五年內追蹤的總樣本數為375 人，假設沒有病人失去聯絡</p>
+<table><thead><tr><th>Year</th><th>No. of patients</th><th>1st year</th><th>2nd year</th><th>3rd year</th><th>4th year</th><th>5th year</th></tr></thead><tbody>
+<tr><td>2000</td><td>84</td><td>44</td><td>21</td><td>13</td><td>10</td><td>8</td></tr>
+<tr><td>2001</td><td>62</td><td>31</td><td>14</td><td>10</td><td>6</td><td></td></tr>
+<tr><td>2002</td><td>93</td><td>50</td><td>20</td><td>13</td><td></td><td></td></tr>
+<tr><td>2003</td><td>60</td><td>29</td><td>16</td><td></td><td></td><td></td></tr>
+<tr><td>2004</td><td>76</td><td>43</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>total</td><td>375</td><td>197</td><td>71</td><td>36</td><td>16</td><td>8</td></tr>
+</tbody></table>
+<ol>
+<li>第一年存活率：經過一年治療後存活的人數共197 人，除以總人數共375 人，得52.5%</li>
+<li>第二年存活率：因2004 年的資料只被統計一年，因此在計算時必須扣除，故經過二年治療後存活的人數共71 人，除以第一年存活人數減掉未繼續統計的人數共154 人，得46.1%</li>
+<li>第三、四、五年的存活率：使用相同方法可以分別算得為65.5%、69.6%、80.0%</li>
+<li>第n 年的存活率：必須將上述計算出各年的存活率全部相乘 ( 有活到第n－1 年的才有機會活到第n 年，類似條件機率的概念 ) ，如下圖可以看到第五年總存活率為8.8%</li>
+</ol>
+<ul>
+<li>優點：可以了解每一年的存活率，而知整個治療的過程，而不像五年存活率只計算最後結果 </li>
+<li>缺點：需要病人每年回診，在操作上花費的人力與經費都遠大於五年存活率法 </li>
+</ul>
+<p>修正</p>
+<p>另外用withdrawal 統計沒有回診的病人，假設未回診病人該年度存活率為50%，或未回診病人當年度存活時間平均為半年 </p>
+<p>Kaplan-Meier 存活分析法</p>
+<p>改成不要求固定、統一的狀況回報時間，為更符合臨床實務且較常用的方法 當有人死亡時才重新計算存活率，也就是只要無死亡發生便假設病人活著 </p>
+<h3 id="存活中位數-median-survival-time"><a class="header" href="#存活中位數-median-survival-time">存活中位數 Median Survival Time</a></h3>
+<p>定義：只剩50%的人存活所需要的時間 </p>
+<p>優點：較不會被極端值影響，不需追蹤至所有個體死亡，為一種可簡易說明且成本較低的方法</p>
+<p>用法：在存活曲線中從50%處畫條直線，即可判斷不同族群的存活時間中位數，直接做比較</p>
+<h3 id="相對存活率-relative-survival-time"><a class="header" href="#相對存活率-relative-survival-time">相對存活率 Relative Survival Time</a></h3>
+<p>定義：某群病人的存活比例 ( 觀察值 ) 與相同條件但沒病的人的存活比例 ( 預期值 ) 之比值。其中預期值為自己設立條件後所得到的數據</p>
 
                     </main>
 
