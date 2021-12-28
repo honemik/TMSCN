@@ -1,0 +1,680 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hant-TW" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>病毒3 - TMSCN</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="The example book covers examples.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../cover.html"><strong aria-hidden="true">1.</strong> 封面</a></li><li class="chapter-item "><a href="../intro.html"><strong aria-hidden="true">2.</strong> 前言</a></li><li class="chapter-item "><a href="../1/chapter_1.html"><strong aria-hidden="true">3.</strong> 解剖學</a></li><li class="chapter-item "><a href="../2/chapter_2.html"><strong aria-hidden="true">4.</strong> 胚胎及發育生物學</a></li><li class="chapter-item "><a href="../3/chapter_3.html"><strong aria-hidden="true">5.</strong> 組織學</a></li><li class="chapter-item "><a href="../4/chapter_4.html"><strong aria-hidden="true">6.</strong> 生理學</a></li><li class="chapter-item "><a href="../5/chapter_5.html"><strong aria-hidden="true">7.</strong> 生物化學</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../5/5-1.html"><strong aria-hidden="true">7.1.</strong> 總論</a></li><li class="chapter-item "><a href="../5/5-2.html"><strong aria-hidden="true">7.2.</strong> 醣類</a></li><li class="chapter-item "><a href="../5/5-3.html"><strong aria-hidden="true">7.3.</strong> 蛋白質</a></li><li class="chapter-item "><a href="../5/5-4.html"><strong aria-hidden="true">7.4.</strong> 脂肪酸</a></li><li class="chapter-item "><a href="../5/5-5.html"><strong aria-hidden="true">7.5.</strong> 基因</a></li></ol></li><li class="chapter-item expanded "><a href="../6/chapter_6.html"><strong aria-hidden="true">8.</strong> 微生物</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6/6-1.html"><strong aria-hidden="true">8.1.</strong> 總論</a></li><li class="chapter-item "><a href="../6/6-2.html"><strong aria-hidden="true">8.2.</strong> 細菌</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6/6-2-1.html"><strong aria-hidden="true">8.2.1.</strong> 細菌1</a></li></ol></li><li class="chapter-item expanded "><a href="../6/6-3.html"><strong aria-hidden="true">8.3.</strong> 病毒</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../6/6-3-1.html"><strong aria-hidden="true">8.3.1.</strong> 病毒1</a></li><li class="chapter-item "><a href="../6/6-3-2.html"><strong aria-hidden="true">8.3.2.</strong> 病毒2</a></li><li class="chapter-item expanded "><a href="../6/6-3-3.html" class="active"><strong aria-hidden="true">8.3.3.</strong> 病毒3</a></li><li class="chapter-item "><a href="../6/6-3-4.html"><strong aria-hidden="true">8.3.4.</strong> 病毒4</a></li></ol></li><li class="chapter-item "><a href="../6/6-4.html"><strong aria-hidden="true">8.4.</strong> 真菌</a></li></ol></li><li class="chapter-item "><a href="../7/chapter_7.html"><strong aria-hidden="true">9.</strong> 免疫學</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../7/7-1.html"><strong aria-hidden="true">9.1.</strong> 總論</a></li><li class="chapter-item "><a href="../7/7-2.html"><strong aria-hidden="true">9.2.</strong> innate</a></li><li class="chapter-item "><a href="../7/7-3.html"><strong aria-hidden="true">9.3.</strong> adaptive</a></li></ol></li><li class="chapter-item "><a href="../8/chapter_8.html"><strong aria-hidden="true">10.</strong> 寄生蟲學</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../8/8-1.html"><strong aria-hidden="true">10.1.</strong> 總論</a></li><li class="chapter-item "><a href="../8/8-2.html"><strong aria-hidden="true">10.2.</strong> 線蟲(nematode)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../8/8-2-1.html"><strong aria-hidden="true">10.2.1.</strong> 線蟲1</a></li><li class="chapter-item "><a href="../8/8-2-2.html"><strong aria-hidden="true">10.2.2.</strong> 線蟲2</a></li></ol></li><li class="chapter-item "><a href="../8/8-3.html"><strong aria-hidden="true">10.3.</strong> 吸蟲(trematode)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../8/8-3-1.html"><strong aria-hidden="true">10.3.1.</strong> 吸蟲1</a></li><li class="chapter-item "><a href="../8/8-3-2.html"><strong aria-hidden="true">10.3.2.</strong> 吸蟲2</a></li></ol></li><li class="chapter-item "><a href="../8/8-4.html"><strong aria-hidden="true">10.4.</strong> 絛蟲(cestode)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../8/8-4-1.html"><strong aria-hidden="true">10.4.1.</strong> 絛蟲1</a></li><li class="chapter-item "><a href="../8/8-4-2.html"><strong aria-hidden="true">10.4.2.</strong> 絛蟲2</a></li></ol></li><li class="chapter-item "><a href="../8/8-5.html"><strong aria-hidden="true">10.5.</strong> 原蟲(protozoae)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../8/8-5-1.html"><strong aria-hidden="true">10.5.1.</strong> 原蟲1</a></li><li class="chapter-item "><a href="../8/8-5-2.html"><strong aria-hidden="true">10.5.2.</strong> 原蟲2</a></li></ol></li><li class="chapter-item "><a href="../8/8-6.html"><strong aria-hidden="true">10.6.</strong> 節肢動物(arthropad)</a></li></ol></li><li class="chapter-item "><a href="../9/chapter_9.html"><strong aria-hidden="true">11.</strong> 公共衛生學</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../9/9-1.html"><strong aria-hidden="true">11.1.</strong> 總論</a></li><li class="chapter-item "><a href="../9/9-2.html"><strong aria-hidden="true">11.2.</strong> 流行病學1</a></li><li class="chapter-item "><a href="../9/9-3.html"><strong aria-hidden="true">11.3.</strong> 流行病學2</a></li></ol></li><li class="chapter-item "><a href="../10/chapter_10.html"><strong aria-hidden="true">12.</strong> 藥理學</a></li><li class="chapter-item "><a href="../11/chapter_11.html"><strong aria-hidden="true">13.</strong> 病理學</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">TMSCN</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/supbg1/TMSCN" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/supbg1/TMSCN/edit/main/src/6/6-3-3.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                        
+
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="冠狀病毒-coronaviruses"><a class="header" href="#冠狀病毒-coronaviruses">冠狀病毒 Coronaviruses</a></h1>
+<h3 id="構造"><a class="header" href="#構造">構造</a></h3>
+<ul>
+<li>最大的 RNA 病毒，直徑約莫 80～160 nm</li>
+<li>螺旋狀核衣膜 ( Helical Nucleocapsid )</li>
+<li>無分段 ssRNA，27～30 kb</li>
+</ul>
+<h3 id="複製週期"><a class="header" href="#複製週期">複製週期</a></h3>
+<ol>
+<li>透過 S Glycoprotein 和宿主細胞受體結合</li>
+<li>藉由外套膜與細胞膜融合 ( Fusion )或胞吞 ( Endocytosis )讓病毒的 RNA 進入細胞質</li>
+<li>(+)Genomic RNA 轉譯出聚合酶 ( RNA-dependent RNA polymerase )及結合病毒 RNA 相關的蛋白</li>
+<li>聚合酶以(+)Genomic RNA 作為模板製造(-)RNA</li>
+<li>(-)RNA 可再複製出(+)Genomic RNA 及轉錄出 Subgenomic mRNA</li>
+<li>不連續轉錄 ( Discontinuous Transcription Mechanism )：冠狀病毒的 mRNA 合成沒有轉錄後的修飾剪切過程，而是有選擇性地從(-)RNA 上，一次性轉錄得到一成熟 mRNA 的全部序列</li>
+<li>多數 Subgenomic mRNA 被轉譯為結構性蛋白，S 醣蛋白會表現在宿主細胞的表面以利於之後和附近未受感染的細胞融合</li>
+<li>經過 RER 和高基氏體，最後在囊泡中組裝成新的病毒</li>
+<li>含病毒的囊泡和細胞質膜融合後，以胞吐 ( Exocytosis )的方式釋放離開細胞，所以會形成套膜</li>
+</ol>
+<h3 id="致病"><a class="header" href="#致病">致病</a></h3>
+<ul>
+<li>造成一般感冒症狀的病毒的次要原因
+<ul>
+<li>症狀包括流鼻水、喉嚨痠痛、輕度發燒</li>
+<li>Self-limited，不會有長期後遺症</li>
+</ul>
+</li>
+<li>感染上呼吸道的上皮細胞 ( 傾向停留在感染處 )，33～35 ̊C 為最佳複製環境</li>
+<li>醣蛋白 Corona 使得病毒能夠在腸胃道存活</li>
+<li>免疫反應 ( Cytokine Storm )會加劇急性呼吸道症候群 ( SARS, Severe Acute Respiratory Syndrome )</li>
+<li>可透過電子顯微鏡在有腹瀉和腸胃炎的患者糞便中觀察到，但其間關聯性尚未釐清</li>
+</ul>
+<h3 id="分類"><a class="header" href="#分類">分類</a></h3>
+<p>可分為 Alpha、Beta、Gamma、Delta 四型 ( 多數冠狀病毒不會使人體產生太嚴重的疾病 )</p>
+<p>Beta Coronavirus</p>
+<ul>
+<li>分為 a、b、c、d</li>
+<li>b 的 SARS-CoV 和 c 的 MERS-CoV 會對人體產生致命症狀</li>
+</ul>
+<h2 id="sars-cov"><a class="header" href="#sars-cov">SARS-CoV</a></h2>
+<h3 id="概論"><a class="header" href="#概論">概論</a></h3>
+<ul>
+<li>源於一新型冠狀病毒 ( Novel Coronavirus )，先前不曾出現在人類身上</li>
+<li>一種嚴重非典型肺炎 ( Severe Atypical Pneumonia )</li>
+</ul>
+<h3 id="症狀"><a class="header" href="#症狀">症狀</a></h3>
+<ul>
+<li>發燒到 38°C以上</li>
+<li>乾咳 ( Nonproductive Cough )</li>
+<li>呼吸困難 ( Dyspnea )</li>
+<li>缺氧 ( Hypoxia )</li>
+</ul>
+<h3 id="流行病學"><a class="header" href="#流行病學">流行病學</a></h3>
+<ul>
+<li>起源於中國，時間是 2002 年的 11 月</li>
+<li>致死率大約是 9 %</li>
+<li>人對人傳染 ( Human-to-human Transmission )</li>
+<li>在疾病爆發的早期發生許多醫護人員 ( Hospital Personnel )的院內感染，但透過呼吸道感染控制，成功減少了院內感染的幅度</li>
+</ul>
+<h3 id="致病機轉"><a class="header" href="#致病機轉">致病機轉</a></h3>
+<ul>
+<li>感染呼吸道 ( Respiratory Tract )的黏膜細胞 ( Mucosal Cells )</li>
+<li>50%的人是無症狀的 ( Asymptomatic )</li>
+<li>人體對其免疫力很短暫，可能會發生二次感染 ( Reinfection )</li>
+</ul>
+<h3 id="診斷"><a class="header" href="#診斷">診斷</a></h3>
+<ul>
+<li>臨床表現 ( Clinical Manifestation )</li>
+<li>實驗室診斷</li>
+<li>Antibody-based Tests</li>
+<li>PCR-based Tests</li>
+</ul>
+<h3 id="治療與預防"><a class="header" href="#治療與預防">治療與預防</a></h3>
+<ul>
+<li>目前沒有任何的藥物或是疫苗
+<ul>
+<li>曾經有關於疫苗開發的研究，但最後沒有多少成果</li>
+<li>藥物曾經嘗試過利巴韋林 ( Ribavirin )還有類固醇 ( Steroid )，但是效果不明</li>
+</ul>
+</li>
+<li>主要透過密集檢測 ( Prompt Case Detection )、立即隔離 ( Immediate Patient Isolation )、接觸追蹤 ( Contact Tracking )來控制疾病的傳染</li>
+<li>溫度計：病患會嚴重發燒，因此溫度計非常的重要</li>
+</ul>
+<h3 id="其他相關"><a class="header" href="#其他相關">其他相關</a></h3>
+<p>大多數的動物體內並沒有出現 SARS-CoV-like Virus 的跡象，目前推測可能是來自於中華菊頭蝠 ( Chinese Horseshoe Bats )</p>
+<ul>
+<li>一個國家的疾病可能傳播到全世界</li>
+<li>航空旅行在疾病的國際傳播上非常重要</li>
+<li>WHO 在國際間的合作與幫助扮演了重要的地位</li>
+</ul>
+<h2 id="mers-cov"><a class="header" href="#mers-cov">MERS-CoV</a></h2>
+<h3 id="流行病學-1"><a class="header" href="#流行病學-1">流行病學</a></h3>
+<ul>
+<li>最早發生在 2012 年 9 月，爆發的區域比較侷限</li>
+<li>單峰駱駝 ( Dromedary Camels )是第一宿主</li>
+<li>從接觸駱駝 ( Camels )傳染，也可人對人傳染</li>
+</ul>
+<h3 id="致病機轉-1"><a class="header" href="#致病機轉-1">致病機轉</a></h3>
+<ul>
+<li>發燒、咳嗽、呼吸急促</li>
+<li>不一定表現出肺炎的症狀，有些實驗室的研究證明會無症狀感染的情況</li>
+<li>有腸胃道疾病 ( Gastrointestinal Symptoms )的回報</li>
+</ul>
+<h3 id="診斷-1"><a class="header" href="#診斷-1">診斷</a></h3>
+<ul>
+<li>臨床表現 ( Clinical Manifestation )</li>
+<li>實驗室診斷
+<ul>
+<li>Active Infection：rRT-PCR</li>
+<li>Previous Infection：ELISA</li>
+<li>Two Confirmatory Tests：IFA &amp; Microneutralization Assays</li>
+</ul>
+</li>
+</ul>
+<h3 id="治療與預防-1"><a class="header" href="#治療與預防-1">治療與預防</a></h3>
+<p>目前沒有藥物與疫苗可以使用</p>
+<h3 id="傳染途徑"><a class="header" href="#傳染途徑">傳染途徑</a></h3>
+<p>研究指出是駱駝的可能性最高，但也可能是蝙蝠</p>
+<p>MERS 疫苗的開發進程：做出疫苗不困難，但是測試與取得許可的過程卻非常困難與花費大量金錢，許多研發因此終止</p>
+<h2 id="2019-sars-cov-2"><a class="header" href="#2019-sars-cov-2">2019 SARS-CoV-2</a></h2>
+<p>need updates</p>
+<hr />
+<h1 id="bunyaviridae-and-arenaviridae"><a class="header" href="#bunyaviridae-and-arenaviridae">Bunyaviridae and Arenaviridae</a></h1>
+<h2 id="病毒性出血熱"><a class="header" href="#病毒性出血熱">病毒性出血熱</a></h2>
+<h3 id="簡介"><a class="header" href="#簡介">簡介</a></h3>
+<p>臨床症狀：突然高燒、肌肉痠痛、頭痛，接著咽喉痛、嘔吐、腹瀉、起斑點狀丘疹及全身器官出血，重症者常伴有肝臟受損、腎衰竭、中樞神經損傷，最後休克併發多重器官衰，致死率達 50％～90%</p>
+<h3 id="感染源"><a class="header" href="#感染源">感染源</a></h3>
+<ul>
+<li>本洋病毒科 ( Bunyaviridae )：漢他病毒 ( Hantavirus )</li>
+<li>沙狀病毒科 ( Arenaviridae )：拉薩熱病毒 ( Lassa Fever Virus )</li>
+<li>線狀病毒科 ( Filoviridae )：伊波拉病毒 ( Ebola Virus )</li>
+<li>黃病毒科 ( Flaviviridae )：黃熱病毒 ( Yellow Fever Virus )、登革熱病毒 ( Dengue Fever Virus )</li>
+</ul>
+<h3 id="傳染方式"><a class="header" href="#傳染方式">傳染方式</a></h3>
+<p>鼠攜病毒（Robovirus；Rodent Born）</p>
+<ul>
+<li>病毒在鼠體內增殖，人由吸入、接觸老鼠的分泌物（如尿液、血液、唾液、糞便等）而感染</li>
+<li>控制方式：消滅傳遞媒介「老鼠」</li>
+<li>例子：漢他病毒（台灣唯一會致病屬本洋病毒科的，為需通報之法定傳染病）、拉薩熱病毒</li>
+</ul>
+<p>蟲媒病毒（Arbovirus；Arthropod Born）</p>
+<ul>
+<li>經由吸血性節肢動物（如蚊子）傳遞</li>
+<li>例子：黃病毒科（Flaviviridae）的黃熱病毒、登革熱病毒</li>
+</ul>
+<p>人傳人（Person to Person）</p>
+<ul>
+<li>容易發生於醫院感染，人與人接觸時藉由含高濃度病毒之分泌物傳播</li>
+<li>種類：伊波拉病毒（Ebola Virus）（絲狀，原始宿主目前推測為蝙蝠）</li>
+</ul>
+<h2 id="本洋病毒科-bunyaviridae"><a class="header" href="#本洋病毒科-bunyaviridae">本洋病毒科 Bunyaviridae</a></h2>
+<h3 id="結構"><a class="header" href="#結構">結構</a></h3>
+<ul>
+<li>具分段的線狀核酸（Segmented），分成 L、M、S 三股 RNA</li>
+<li>外有螺旋對稱（Helical Symmetry）之蛋白質外殼，內不含基質蛋白（Matrix Protein）</li>
+<li>有套膜，由內質網或高基氏體製造</li>
+</ul>
+<h3 id="分類-1"><a class="header" href="#分類-1">分類</a></h3>
+<table><thead><tr><th>屬</th><th>種</th><th>病媒</th><th>病症</th><th>脊椎動物宿主</th></tr></thead><tbody>
+<tr><td>正本洋病毒屬（Orthobunyavirus）</td><td>Bunyamweravirus、California encephalitis virus、LaCrosse virus、Oropouche virus 等 150種</td><td>蚊子</td><td>熱症、腦炎、紅疹</td><td>老鼠、鳥類、小型哺乳類、靈長類、有袋類</td></tr>
+<tr><td>靜脈病毒屬（Phlebovirus）</td><td>Rift Valley fever virus、Sandfly fever virus、Heartland virus 等 38 種</td><td>蠅、蜱</td><td>白蛉熱、出血熱、腦炎、結膜炎、肌炎</td><td>綿羊、小牛、家畜</td></tr>
+<tr><td>烏庫病毒屬（Uukuvirus）</td><td>Crimean-Congo hemorrhagic fever virus 等 6 種</td><td>蜱</td><td>出血熱</td><td>野兔、小牛、山羊、海鳥</td></tr>
+<tr><td>奈洛病毒屬（Nairovirus）</td><td>Unkuniemi virus 等 7 種</td><td>蜱</td><td>/</td><td>鳥</td></tr>
+<tr><td>漢他病毒屬（Hantavirus）</td><td>Hantaan virus</td><td>無</td><td>出血熱併腎症群、昏迷、肺水腫</td><td>老鼠</td></tr>
+<tr><td>漢他病毒屬（Hantavirus）</td><td>Sin Nombre</td><td>無</td><td>肺症候群、昏迷、肺水腫</td><td>鹿鼠</td></tr>
+</tbody></table>
+<h2 id="漢他病毒-hantavirus"><a class="header" href="#漢他病毒-hantavirus">漢他病毒 Hantavirus</a></h2>
+<h3 id="發現歷史"><a class="header" href="#發現歷史">發現歷史</a></h3>
+<ul>
+<li>在 20 世紀初流行於中國東北地區，並由各種鼠類散佈世界各地，韓戰期間曾感染三千多美軍</li>
+<li>1976～1978 年間在韓國第一次從老鼠分離出來</li>
+<li>1993 年，美國亞利桑那州、新墨西哥州、科羅拉多州和猶他州出現一種不明疾病，原本健康強壯的年青人突然罹患急性呼吸窘迫症（Unexplained Adult Respiratory Distress Syndrome），有半數很快就死亡。美國衛生單位證實是由一新型漢他病毒株所導致，也證實了宿主是糜鼠</li>
+</ul>
+<h3 id="構造-1"><a class="header" href="#構造-1">構造</a></h3>
+<ul>
+<li>套膜</li>
+<li>三段(-)ssRNA，S 段為負義，非本洋病毒之雙義（Ambisense）</li>
+</ul>
+<h3 id="傳染方式-1"><a class="header" href="#傳染方式-1">傳染方式</a></h3>
+<ul>
+<li>屬於鼠攜病毒（Robovirus），鼠為其自然宿主，人接觸帶病毒鼠類之尿、糞及唾液而感染
+<ul>
+<li>被帶有漢他病毒的鼠類咬到</li>
+<li>吃到或喝到被漢他病毒帶原者接觸過的食物或飲水</li>
+<li>鼻子眼睛或是嘴巴接觸到沾有漢他病毒之微粒</li>
+</ul>
+</li>
+<li>在人體血液中病毒濃度不高，並不會人傳人，因此人類為終端宿主（Dead-end-host）</li>
+<li>屬於區域性疾病，影響外地人大於本地人，因當地人可能從小接觸過而有一定抵抗力</li>
+<li>健康個體多不會有症狀，但某些種會造成致死性疾病，如出血熱併腎症群（HFRS, Hantavirus Hemorrhagic Fever with Renal Syndrome）、肺症候群（HPS, Hantavirus Pulmonary Syndrome）</li>
+</ul>
+<h3 id="症狀-1"><a class="header" href="#症狀-1">症狀</a></h3>
+<ul>
+<li>出血熱併腎症候群（HFRS, Hantavirus Hemorrhagic Fever with Renal Syndrome）
+<ul>
+<li>主要侵犯腎臟及微血管</li>
+<li>三大表徵：發燒、血小板偏低、急性腎衰竭等</li>
+<li>發病期約 3 至 14 天，會有發燒、低血壓、寡尿、多尿等症狀，恢復期約四至八週，死亡率 6%（台灣病例多出現此症狀）</li>
+</ul>
+</li>
+<li>肺症候群（HPS, Hantavirus Pulmonary Syndrome）
+<ul>
+<li>潛伏期約 4 天到 1 個月</li>
+<li>有發燒、肌肉疼痛、頭痛、噁心嘔吐、低血壓、多尿等病程</li>
+<li>若高燒、雙側肺部瀰漫浸性水腫、於住院七十二小時內，演變成呼吸困難需藉助氧氣呼吸（急性呼吸衰竭），恢復期就要好幾個月，死亡率高達 50 %（台灣曾出現過案例）</li>
+</ul>
+</li>
+</ul>
+<h3 id="治療與預防-2"><a class="header" href="#治療與預防-2">治療與預防</a></h3>
+<ul>
+<li>目前無特殊治療，以支持性療法為主，應盡早給予特別照護，以矯正肺和血液電解質之平衡</li>
+<li>在確診為漢他病毒肺症候群前可視情況給予必要之抗生素治療。盡，對病人的預後相當重要</li>
+<li>Ribavirin 為目前唯一有效的抗生素，其為核酸類似物，能抑制 RNA 病毒複製，對所有 RNA 病毒都有一定的效果</li>
+<li>消滅帶有病原的老鼠為預防的最有效方法</li>
+<li>在台灣的病例不多，但其屬於法定第二類傳染病，應於 24 小時內通報當地衛生機關</li>
+</ul>
+<h2 id="沙狀病毒-arena-virus"><a class="header" href="#沙狀病毒-arena-virus">沙狀病毒 Arena Virus</a></h2>
+<h3 id="結構-1"><a class="header" href="#結構-1">結構</a></h3>
+<ul>
+<li>帶有核醣體：從宿主細胞獲得，會使其在電子顯微鏡下呈沙狀（Sandy），實際作用不明</li>
+<li>大小：50～300nm</li>
+<li>多態性（Polymorphic）：具套膜而使細菌的同一種群中存在兩種或多種明顯不同的表型</li>
+<li>帶有兩條環狀的 ssRNA，分別為 L 跟 S RNA（7.5kb 跟 3.5kb）
+<ul>
+<li>L RNA：製造 RNA 聚合酶及 Z Protein（與穩定有關係）</li>
+<li>S RNA：製造 Np（Nuclear Protein）跟 Gp（Glycoprotein）</li>
+</ul>
+</li>
+<li>S RNA 為雙義（Ambisense）：其 RNA 具有一正一負的序列，各編碼一個基因。(-)RNA 會由 mRNA 轉譯；(+)RNA 則會先合成互補股，再被轉錄成 mRNA 做轉譯</li>
+<li>表面有醣蛋白突起</li>
+<li>帶有核酸複製酵素</li>
+</ul>
+<h3 id="傳染途徑-1"><a class="header" href="#傳染途徑-1">傳染途徑</a></h3>
+<ul>
+<li>人畜共通疾病，主要由囓齒類動物攜帶病毒，和漢他病毒同為鼠攜病毒</li>
+<li>直接或間接接觸到受感染齧齒類的排泄物污染物而感染，也可能人傳人，但較少見</li>
+<li>感染巨噬細胞，誘發其釋放發炎因子，造成嚴重免疫反應如細胞激素風暴（Cytokine Storm），因此一開始症狀會類似流感，也會引起血管內皮的損傷</li>
+</ul>
+<h3 id="臨床症狀"><a class="header" href="#臨床症狀">臨床症狀</a></h3>
+<p>淋巴球性脈絡叢腦膜炎（LCM, Lymphocytic Choriomeningitis）</p>
+<ul>
+<li>病因：淋巴球性脈絡叢腦膜炎病毒（Lymphocytic Choriomeningitis Virus）</li>
+<li>以腦膜炎為典型症狀，但更常出現類流感肌痛，僅 10%感染者會進展至中樞神經感染。通常腦膜炎會完全康復，觀察腦部神經細胞剖面可見周邊血管出現單核球浸潤現象</li>
+</ul>
+<h2 id="拉薩熱lhf-lassa-hemorrhagic-fever"><a class="header" href="#拉薩熱lhf-lassa-hemorrhagic-fever">拉薩熱（LHF, Lassa Hemorrhagic Fever）</a></h2>
+<ul>
+<li>主要發生在西部非洲地區。1969 年因奈及利亞兩名隨軍護士死亡而的一次發現</li>
+<li>病因：拉薩病毒（目前被 CDC 歸類為第四級病毒）</li>
+</ul>
+<h3 id="傳染方式-2"><a class="header" href="#傳染方式-2">傳染方式</a></h3>
+<ul>
+<li>人畜共通疾病，宿主是齧齒類動物，而在非洲部落常以這些老鼠為主食，因而感染</li>
+<li>當地原住民可能不會那麼嚴重，可是外來人往往會得到嚴重的出血熱</li>
+<li>由糞便及尿液排出病毒，可在空氣中傳播，目前致病機制仍不清楚</li>
+</ul>
+<h3 id="症狀-2"><a class="header" href="#症狀-2">症狀</a></h3>
+<ul>
+<li>大多數會在感染後的一到三個禮拜開始出現輕燒、疲憊感、虛弱感、頭痛等輕微症狀，常因此而沒被診斷出來</li>
+<li>少部分會出現較嚴重的發燒、臉部腫脹、肌肉無力、肝脾硬化、結膜炎及黏膜出血等等，接著病程很快進入出血熱，未接受治療致命性高，但和 LCM 相異處在不會損壞中樞神經</li>
+<li>約 1%會死亡</li>
+</ul>
+<h3 id="治療"><a class="header" href="#治療">治療</a></h3>
+<p>目前沒有疫苗和特別的抗病毒藥物。唯一用藥是 Ribavirin（對 RNA 病毒有效）</p>
+<h3 id="預防"><a class="header" href="#預防">預防</a></h3>
+<ul>
+<li>避免接觸病原體：如減少與囓齒類動物之間的接觸</li>
+<li>降低在實驗過程中感染的機率：如在三級或四級實驗室進行操作</li>
+<li>屬於第五類法定傳染病，同樣為第五類法定傳染病的還有新型 A 型流感、黃熱病、裂谷熱、中東呼吸症候群冠狀病毒感染症、馬堡病毒出血熱、伊波拉病毒感染</li>
+</ul>
+<hr />
+<h1 id="線狀病毒-filoviruses"><a class="header" href="#線狀病毒-filoviruses">線狀病毒 Filoviruses</a></h1>
+<h3 id="結構-2"><a class="header" href="#結構-2">結構</a></h3>
+<ul>
+<li>大小：長約 790～1400 nm，直徑約 80 nm，呈長條狀</li>
+<li>有蛋白質形成的螺旋狀外殼（Helical Capsid）</li>
+<li>線狀(-)ssRNA，全長 19 kb，編碼 7 個結構蛋白</li>
+</ul>
+<h3 id="分類-2"><a class="header" href="#分類-2">分類</a></h3>
+<p>Cuevavirus、Ebolavirus、Marburgvirus</p>
+<h3 id="致病機轉-2"><a class="header" href="#致病機轉-2">致病機轉</a></h3>
+<ul>
+<li>透過 Endocytosis 和 Phagocytosis 感染目標細胞
+<ul>
+<li>上皮細胞</li>
+<li>單核球、巨噬細胞</li>
+<li>肝細胞（Hepatocytes）</li>
+<li>樹突細胞</li>
+</ul>
+</li>
+<li>感染後會製造醣蛋白（Glycoprotein），有兩種形式
+<ul>
+<li>GP：形成 Trimeric Complex，結合到血管內襯的內皮細胞，破壞血管引發出血</li>
+<li>sGP（secreted GP）：形成 Dimeric Protein，影響嗜中性球訊號傳遞，抑制其早期的活化</li>
+</ul>
+</li>
+<li>利用白血球移動到身體各處，如：淋巴結、肝、肺、脾</li>
+</ul>
+<h3 id="傳染途徑-2"><a class="header" href="#傳染途徑-2">傳染途徑</a></h3>
+<ul>
+<li>推測果蝠為伊波拉病毒的帶病原宿主（Reservoir Host）當動物或人接觸帶有病毒的蝙蝠、豬、猿類等會發生 Spillover Event，常發生於狩獵、食用生肉、接觸動物及動物產品時</li>
+<li>易人傳人，接觸到病患體液、排泄物、嘔吐物可能感染</li>
+<li>病毒在乳汁或精液中可存活 3 個月，在屍體上可存活 4 週，安全處理遺體的方式為不解剖</li>
+</ul>
+<h3 id="症狀-3"><a class="header" href="#症狀-3">症狀</a></h3>
+<ul>
+<li>初期（感染後 2～21 天）：發燒、劇烈頭痛、肌肉痠痛、虛弱、疲勞、腹瀉、嘔吐、腹痛</li>
+<li>身體各處產生出血</li>
+<li>常在發病後三天死亡，致死率平均約 50%</li>
+<li>康復者體內的病毒抗體將存在十年</li>
+</ul>
+<hr />
+<h1 id="呼腸道病毒-reoviridae"><a class="header" href="#呼腸道病毒-reoviridae">呼腸道病毒 Reoviridae</a></h1>
+<h2 id="reoviridaerespiratoryentericorphan呼吸道腸道孤兒病毒"><a class="header" href="#reoviridaerespiratoryentericorphan呼吸道腸道孤兒病毒">Reoviridae（Respiratory，Enteric，Orphan）：呼吸道腸道（孤兒）病毒</a></h2>
+<h2 id="輪狀病毒rotavirus"><a class="header" href="#輪狀病毒rotavirus">輪狀病毒Rotavirus</a></h2>
+<h3 id="結構-3"><a class="header" href="#結構-3">結構</a></h3>
+<ul>
+<li>輪狀病毒有 11 段雙股 RNA（Segmented dsRNA），被三層蛋白質外殼（Core、Inner Capsid、Outer Capsid）包圍</li>
+<li>蛋白質分為兩種
+<ul>
+<li>結構性蛋白質（VP, Structural Viral Proteins）： VP1～4、VP6～7 共六個</li>
+<li>非結構性蛋白質（NSP, Nonstructural Protein）： NSP1～6 共六個。僅在輪狀病毒感染的細胞中製造，而沒有構成病毒體的結構</li>
+</ul>
+</li>
+</ul>
+<h3 id="分類-3"><a class="header" href="#分類-3">分類</a></h3>
+<ul>
+<li>可用 VP6 分成 7 個 Groups（A～G）和 2 個 Subgroups（I and II）
+<ul>
+<li>A 種（Rotavirus A）：最常見，造成超過 90%人類輪狀病毒感染。好發於兩歲以下幼兒，造成嬰兒腸胃炎（Infantile Gastroenteritis）</li>
+</ul>
+</li>
+<li>B 種（Rotavirus B）：又稱為成人腹瀉輪狀病毒（ADRV, Adult Diarrhea Rotavirus），會引起嚴重成人與嬰幼兒腹瀉（曾在中國爆發）</li>
+</ul>
+<h3 id="複製特性"><a class="header" href="#複製特性">複製特性</a></h3>
+<ul>
+<li>經過消化道時，外層蛋白殼被蛋白酶（如 Trypsin）切割（Proteolytic Cleavage）後脫去外殼</li>
+<li>製造中間型/感染性次病毒顆粒（ISVP, Intermediate/Infectious Subviral Particle），增加感染力</li>
+</ul>
+<h3 id="傳染方式-3"><a class="header" href="#傳染方式-3">傳染方式</a></h3>
+<ul>
+<li>人與人間以糞口傳染（Fecal-oral Transmission）</li>
+<li>具有高度傳染性，嬰孩或成人不小心接觸接觸下列物品極有可能感染
+<ul>
+<li>感染者的體液或糞便</li>
+<li>遭感染者糞便污染的物品</li>
+</ul>
+</li>
+<li>病毒由口腔進入人體，在十二指腸內進行複製，造成嘔吐（Vomiting）或腹瀉（Diarrhea）</li>
+<li>病毒可在人類手上存活數小時，在堅硬表面則存活更久</li>
+</ul>
+<h3 id="臨床症狀-1"><a class="header" href="#臨床症狀-1">臨床症狀</a></h3>
+<ul>
+<li>常見於新生兒、幼兒感染，引發嬰兒腸胃炎（Infantile Gastroenteritis）。世界上每個約五歲的小孩幾乎都曾至少感染過一次輪狀病毒</li>
+<li>通常在感染後 24～48 小時發作，2～3 天後痊癒</li>
+<li>造成噁心（Nausea）、嘔吐（Vomiting）、腹瀉（Diarrhea）、腹絞痛（Stomach Cramps）、肌肉疼痛（Myalgia）、不舒服（Malaise）、頭痛（Headache）、低燒（Low-grade Fever）等症狀</li>
+<li>因每次感染後人體免疫力會逐漸增強，後續感染的病況就會減輕。成人多為無症狀感染（Subclinical Infection）</li>
+</ul>
+<h3 id="流行病學-2"><a class="header" href="#流行病學-2">流行病學</a></h3>
+<p>全球性分佈，好發於秋冬，尤其是 3 個月至 35 個月大的新生兒或幼兒</p>
+<h3 id="治療與預防-3"><a class="header" href="#治療與預防-3">治療與預防</a></h3>
+<ul>
+<li>目前無抗病毒療法（Antiviral Therapy），以支持性療法為主，如 Rehydration Therapy：病人通過口服或靜脈注射補充因腹瀉所流失的水分和鹽類（如鈉、鉀），以預防嚴重脫水</li>
+</ul>
+<p>疫苗</p>
+<table><thead><tr><th></th><th>RotaTaq 輪達停</th><th>Rotarix 羅特律</th></tr></thead><tbody>
+<tr><td>服用方式</td><td>口服</td><td>活性減毒口服</td></tr>
+<tr><td>劑型</td><td>三劑型</td><td>兩劑型</td></tr>
+<tr><td>病毒株來源</td><td>人牛重組五價輪狀病毒</td><td>人類單價輪狀病毒</td></tr>
+<tr><td>疫苗血清型</td><td>G1、G2、G3、G4、P1A[8]</td><td></td></tr>
+<tr><td>第一劑</td><td>6～12 週</td><td>至少 6 週</td></tr>
+<tr><td>間隔</td><td>4～10 週</td><td>至少隔 4 週</td></tr>
+<tr><td>最後一劑最晚時間</td><td>32 週</td><td>最晚 24 週，建議 16 週內給完</td></tr>
+</tbody></table>
+<h2 id="諾羅病毒-noroviruses"><a class="header" href="#諾羅病毒-noroviruses">諾羅病毒 Noroviruses</a></h2>
+<ul>
+<li>屬於杯狀病毒科（Caliciviridae）</li>
+<li>美國食源性疾病（Food-borne Disease）最常見的致病原</li>
+<li>發現：1968 年於美國猶他州的 Norwalk，從急性腸胃炎（Acute Gastroenteritis）病患的糞便中被發現，因此也被稱為 Norwalk Virus</li>
+</ul>
+<h3 id="結構與特性"><a class="header" href="#結構與特性">結構與特性</a></h3>
+<ul>
+<li>(+)ssRNA，外層為 20 面體外殼和 32 杯狀凹陷（Cupped Shape Depressions），無套膜</li>
+<li>大小：約 27～40nm</li>
+<li>比 Poliovirus 和 Rotavirus 更有環境抗性（Environmental Resistance），可抵抗 60°C 高溫、pH＝3 的酸性環境、清潔劑、水中氯離子的侵襲（重要！）</li>
+</ul>
+<h3 id="傳染方式-4"><a class="header" href="#傳染方式-4">傳染方式</a></h3>
+<p>經由受汙染的水源或食物，以糞口傳染的方式傳播</p>
+<h3 id="臨床症狀-2"><a class="header" href="#臨床症狀-2">臨床症狀</a></h3>
+<ul>
+<li>全球急性腸胃炎（Acute Gastroenteritis）的最常見致病原</li>
+<li>於感染後 24～48 出現症狀，通常 2～3 天後自體康復（Self-limiting），不對健康造成嚴重影響</li>
+<li>造成噁心（Nausea）、嘔吐（Vomiting）、水瀉（Watery Diarrhea）、腹絞痛（Stomach Cramps）、肌肉疼痛（Myalgias）、身體不適（Malaise）、頭痛（Headache）、低燒（Low-grade Fever）等</li>
+<li>一般病患在急性腹瀉停止後 48 小時内仍具傳染性</li>
+</ul>
+<h3 id="流行病學-3"><a class="header" href="#流行病學-3">流行病學</a></h3>
+<ul>
+<li>可感染各年齡層且人類是唯一帶病毒者</li>
+<li>雖分佈於全球，近期在特定國家（日本、美國、歐洲國家等）有小規模的疫情發生</li>
+<li>在台灣則好發於人口密集的地方，如長期養護之家、醫院、學校、營區</li>
+<li>無法被分離培養，因此較晚被發現</li>
+</ul>
+<h3 id="治療與防範"><a class="header" href="#治療與防範">治療與防範</a></h3>
+<ul>
+<li>目前無任何抗病毒治療（Antiviral Therapy）或疫苗（Vaccine）</li>
+<li>可利用 Rehydration Therapy</li>
+<li>因諾羅病毒有多種不同的病毒株，大部分病患在受感染後的抵抗力可維持約 4～6 個月，免於再感染的發生。多次感染似乎可增加個體的抵抗力，但這些保護力在約 2～3 年後會逐漸消失</li>
+<li>只能以 RT-PCR 或 Real-time RT-PCR 方式進行分析</li>
+</ul>
+<h3 id="與-picornavirus-和-astrovirus-之比較"><a class="header" href="#與-picornavirus-和-astrovirus-之比較">與 Picornavirus 和 Astrovirus 之比較</a></h3>
+<ul>
+<li>相同：無套膜的 ss(+)RNA，相似構造大小</li>
+<li>相異：基因排列上的不同→Picornavirus 的結構蛋白靠近 5’端，Calicivirus 的則靠近 3’</li>
+</ul>
+<h3 id="腸胃道的病毒感染"><a class="header" href="#腸胃道的病毒感染">腸胃道的病毒感染</a></h3>
+<ul>
+<li>腸胃炎（Gastroenteritis）：最常見症狀為水瀉與嘔吐</li>
+<li>比較：
+<ul>
+<li>Reoviridae：Rotavirus，感染新生兒及幼兒為主</li>
+<li>Caliciviridae：Norovirus，感染各年齡層</li>
+<li>Adenoviridae：Adenoviruses</li>
+<li>Coronaviridae：Coronaviruses，Toroviruses</li>
+</ul>
+</li>
+</ul>
+<h3 id="輪狀病毒rotavirus與諾羅病毒norovirus之比較"><a class="header" href="#輪狀病毒rotavirus與諾羅病毒norovirus之比較">輪狀病毒（Rotavirus）與諾羅病毒（Norovirus）之比較</a></h3>
+<table><thead><tr><th></th><th>輪狀病毒 ( Rotavirus )</th><th>諾羅病毒（Norovirus）</th></tr></thead><tbody>
+<tr><td>特徵</td><td>無套膜、ds RNA</td><td>無套膜、ss(+)RNA</td></tr>
+<tr><td>環境抗性</td><td>比一般病毒強</td><td>比 Rotavirus 和 Poliovirus 更強</td></tr>
+<tr><td>疫苗</td><td>有</td><td>無</td></tr>
+<tr><td>好發族群</td><td>新生兒和幼兒</td><td>各年齡層</td></tr>
+<tr><td>患者比例</td><td>低</td><td>高</td></tr>
+</tbody></table>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../6/6-3-2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../6/6-3-4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../6/6-3-2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../6/6-3-4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
