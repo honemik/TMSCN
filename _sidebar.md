@@ -1,6 +1,5 @@
 * [README](README.md)
 * [test](test.md)
-* [_sidebar](_sidebar.md)
 * [封面](/cover.md)
 * [前言](/intro.md)
 * [解剖學](/1/chapter_1.md)
